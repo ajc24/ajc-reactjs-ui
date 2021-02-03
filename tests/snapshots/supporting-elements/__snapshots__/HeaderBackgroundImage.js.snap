@@ -5,9 +5,10 @@ exports[`HeaderBackgroundImage Default props and rendering - Image src as a stri
   role="banner"
 >
   <img
-    alt="undefined header background image data / path"
     className="ajc-header-image"
     id="test-image-id"
+    onLoad={[Function]}
+    role="presentation"
     src="../../../stories/images/storybook-header-bg.png"
   />
 </div>
@@ -18,9 +19,10 @@ exports[`HeaderBackgroundImage Default props and rendering - Image src as an imp
   role="banner"
 >
   <img
-    alt="undefined header background image data / path"
     className="ajc-header-image"
     id="test-image-id"
+    onLoad={[Function]}
+    role="presentation"
     src={Object {}}
   />
 </div>

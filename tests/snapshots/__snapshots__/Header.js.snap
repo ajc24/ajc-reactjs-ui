@@ -79,9 +79,10 @@ exports[`Header Transferred props and rendering - Header with red top border and
   role="banner"
 >
   <img
-    alt="undefined header background image data / path"
     className="ajc-header-image"
     id="test-header-image-id"
+    onLoad={[Function]}
+    role="presentation"
     src={Object {}}
   />
   <div
