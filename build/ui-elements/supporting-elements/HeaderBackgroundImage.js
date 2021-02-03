@@ -16,6 +16,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 class HeaderBackgroundImage extends _react.default.Component {
   constructor(props) {
     super(props);
+    this.setImageLoaded = this.setImageLoaded.bind(this);
+  }
+  /**
+   * Sets the image as loaded and transitions it into the UI
+   */
+
+
+  setImageLoaded() {
+    const imageElement = document.querySelector(`img[id="${this.props.id}"]`);
+    imageElement.style.opacity = 1;
   }
 
   render() {
@@ -24,7 +34,8 @@ class HeaderBackgroundImage extends _react.default.Component {
       id: this.props.id,
       className: imageStyling,
       src: this.props.imageSrc,
-      alt: "undefined header background image data / path"
+      role: "presentation",
+      onLoad: this.setImageLoaded
     }));
   }
 
