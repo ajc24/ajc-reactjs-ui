@@ -11,7 +11,7 @@ class HeaderBackgroundImage extends React.Component {
     const imageStyling = 'ajc-header-image';
     return (
       <React.Fragment>
-        <img id={this.props.id} className={imageStyling} src={this.props.imageSrc} alt="undefined header background image data / path" />
+        <img id={this.props.id} className={imageStyling} src={this.props.imageSrc} role="presentation" />
       </React.Fragment>
     );
   }
