@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderBackgroundImage Default props and rendering - Image src as a string verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <img
+    alt="undefined header background image data / path"
+    className="ajc-header-image"
+    id="test-image-id"
+    src="../../../stories/images/storybook-header-bg.png"
+  />
+</div>
+`;
+
+exports[`HeaderBackgroundImage Default props and rendering - Image src as an import of image data verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <img
+    alt="undefined header background image data / path"
+    className="ajc-header-image"
+    id="test-image-id"
+    src={Object {}}
+  />
+</div>
+`;
