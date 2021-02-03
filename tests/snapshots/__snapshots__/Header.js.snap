@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Default props and rendering - Header with no top border and transparent background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-header-container ajc-default ajc-text-black ajc-background-transparent"
+  id="test-header-id"
+  role="banner"
+>
+  <div
+    className="ajc-header-content-outer"
+  >
+    <div
+      className="ajc-header-content-inner"
+    >
+      Header text content.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header Transferred props and rendering - Header with grey top border and white background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-header-container ajc-default ajc-text-black ajc-header-border-top-grey ajc-background-white"
+  id="test-header-id"
+  role="banner"
+>
+  <div
+    className="ajc-header-content-outer"
+  >
+    <div
+      className="ajc-header-content-inner"
+    >
+      Header text content.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header Transferred props and rendering - Header with grey top border and yellow background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-header-container ajc-default ajc-text-black ajc-header-border-top-grey ajc-background-yellow"
+  id="test-header-id"
+  role="banner"
+>
+  <div
+    className="ajc-header-content-outer"
+  >
+    <div
+      className="ajc-header-content-inner"
+    >
+      Header text content.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header Transferred props and rendering - Header with no top border and grey background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-header-container ajc-default ajc-text-black ajc-background-grey-1"
+  id="test-header-id"
+  role="banner"
+>
+  <div
+    className="ajc-header-content-outer"
+  >
+    <div
+      className="ajc-header-content-inner"
+    >
+      Header text content.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header Transferred props and rendering - Header with red top border and image background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-header-container ajc-default ajc-text-black ajc-header-border-top-red"
+  id="test-header-id"
+  role="banner"
+>
+  <img
+    alt="undefined header background image data / path"
+    className="ajc-header-image"
+    id="test-header-image-id"
+    src={Object {}}
+  />
+  <div
+    className="ajc-header-content-outer"
+  >
+    <div
+      className="ajc-header-content-inner"
+    >
+      Header text content.
+    </div>
+  </div>
+</div>
+`;
