@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItemSingle Default props and rendering verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-item-single ajc-menu-bar-item-grey"
+    id="test-menu-item-single"
+  >
+    <a
+      className="ajc-menu-bar-item-content ajc-default"
+      href="/test-route"
+      onClick={[Function]}
+    >
+         
+      Menu Item (Single)
+         
+    </a>
+  </div>
+</div>
+`;
+
+exports[`MenuItemSingle Transferred props and rendering: MenuItemSingle in red verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-item-single ajc-menu-bar-item-red"
+    id="test-menu-item-single"
+  >
+    <a
+      className="ajc-menu-bar-item-content ajc-default"
+      href="/test-route"
+      onClick={[Function]}
+    >
+         
+      Menu Item (Single)
+         
+    </a>
+  </div>
+</div>
+`;
