@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Default props and rendering verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-menu-bar-container ajc-default ajc-background-grey-2"
+  id="test-menu"
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-content-outer"
+    id="menu-bar-content-outer"
+  >
+    <div
+      className="ajc-menu-bar-content-inner"
+      id="menu-bar-content-inner"
+    >
+      <div
+        className="ajc-menu-bar-item-single ajc-menu-bar-item-grey"
+        id="menu-item-0"
+      >
+        <a
+          className="ajc-menu-bar-item-content ajc-default"
+          href="/test-item-1"
+          onClick={[Function]}
+        >
+             
+          Menu Item 1
+             
+        </a>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single"
+        id="dropdown-menu-1"
+      >
+        <div
+          className="ajc-menu-bar-item-content ajc-menu-bar-item-grey"
+          data-expanded="false"
+          onClick={[Function]}
+        >
+            
+          Dropdown Menu Item 1
+           ▾  
+        </div>
+        <div
+          className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
+          id="dropdown-menu-1--content-parent"
+        >
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+            href="/test-dropdown-item-1-1"
+            id="dropdown-menu-1--content-parent--dropdown-menu-item-0"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 1.1
+             ▸  
+          </a>
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+            href="/test-dropdown-item-1-2"
+            id="dropdown-menu-1--content-parent--dropdown-menu-item-1"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 1.2
+             ▸  
+          </a>
+        </div>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single ajc-menu-bar-item-grey"
+        id="menu-item-2"
+      >
+        <a
+          className="ajc-menu-bar-item-content ajc-default"
+          href="/test-item-2"
+          onClick={[Function]}
+        >
+             
+          Menu Item 2
+             
+        </a>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single"
+        id="dropdown-menu-3"
+      >
+        <div
+          className="ajc-menu-bar-item-content ajc-menu-bar-item-grey"
+          data-expanded="false"
+          onClick={[Function]}
+        >
+            
+          Dropdown Menu Item 2
+           ▾  
+        </div>
+        <div
+          className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
+          id="dropdown-menu-3--content-parent"
+        >
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+            href="/test-dropdown-item-2-1"
+            id="dropdown-menu-3--content-parent--dropdown-menu-item-0"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 2.1
+             ▸  
+          </a>
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+            href="/test-dropdown-item-2-2"
+            id="dropdown-menu-3--content-parent--dropdown-menu-item-1"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 2.2
+             ▸  
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Menu Transferred props and rendering: Component with red background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-menu-bar-container ajc-default ajc-background-red"
+  id="test-menu"
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-content-outer"
+    id="menu-bar-content-outer"
+  >
+    <div
+      className="ajc-menu-bar-content-inner"
+      id="menu-bar-content-inner"
+    >
+      <div
+        className="ajc-menu-bar-item-single ajc-menu-bar-item-red"
+        id="menu-item-0"
+      >
+        <a
+          className="ajc-menu-bar-item-content ajc-default"
+          href="/test-item-1"
+          onClick={[Function]}
+        >
+             
+          Menu Item 1
+             
+        </a>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single"
+        id="dropdown-menu-1"
+      >
+        <div
+          className="ajc-menu-bar-item-content ajc-menu-bar-item-red"
+          data-expanded="false"
+          onClick={[Function]}
+        >
+            
+          Dropdown Menu Item 1
+           ▾  
+        </div>
+        <div
+          className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
+          id="dropdown-menu-1--content-parent"
+        >
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+            href="/test-dropdown-item-1-1"
+            id="dropdown-menu-1--content-parent--dropdown-menu-item-0"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 1.1
+             ▸  
+          </a>
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+            href="/test-dropdown-item-1-2"
+            id="dropdown-menu-1--content-parent--dropdown-menu-item-1"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 1.2
+             ▸  
+          </a>
+        </div>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single ajc-menu-bar-item-red"
+        id="menu-item-2"
+      >
+        <a
+          className="ajc-menu-bar-item-content ajc-default"
+          href="/test-item-2"
+          onClick={[Function]}
+        >
+             
+          Menu Item 2
+             
+        </a>
+      </div>
+      <div
+        className="ajc-menu-bar-item-single"
+        id="dropdown-menu-3"
+      >
+        <div
+          className="ajc-menu-bar-item-content ajc-menu-bar-item-red"
+          data-expanded="false"
+          onClick={[Function]}
+        >
+            
+          Dropdown Menu Item 2
+           ▾  
+        </div>
+        <div
+          className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
+          id="dropdown-menu-3--content-parent"
+        >
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+            href="/test-dropdown-item-2-1"
+            id="dropdown-menu-3--content-parent--dropdown-menu-item-0"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 2.1
+             ▸  
+          </a>
+          <a
+            className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+            href="/test-dropdown-item-2-2"
+            id="dropdown-menu-3--content-parent--dropdown-menu-item-1"
+            onClick={[Function]}
+          >
+              
+            Dropdown Menu Item 2.2
+             ▸  
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
