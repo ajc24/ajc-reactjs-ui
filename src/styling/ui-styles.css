@@ -91,7 +91,7 @@
   min-height: 165px;
   max-height: 165px;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1903px;
   min-width: 703px;
 }
 
@@ -244,6 +244,7 @@
   min-height: 55px;
   max-height: 55px;
   width: 100%;
+  max-width: 1903px;
   min-width: 683px;
 }
 
@@ -259,7 +260,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
+  width: auto;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 10px;
@@ -301,7 +302,8 @@
 
 .ajc-menu-bar-item-single {
   display: flex;
-  align-items: center;
+  text-align: center;
+  white-space: nowrap;
   height: 55px;
   margin-top: 0px;
   margin-bottom: 0px;
