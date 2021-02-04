@@ -217,12 +217,14 @@
   margin: 0;
   padding: 0;
   font-size: 50px;
+  cursor: default;
 }
 
 .ajc-header-title-subtitle-heading-two {
   margin: 0;
   padding: 0;
   font-size: 25px;
+  cursor: default;
 }
 
 .ajc-header-title-subtitle-top {
@@ -276,6 +278,7 @@
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  cursor: pointer;
 }
 
 .ajc-menu-bar-item-grey {

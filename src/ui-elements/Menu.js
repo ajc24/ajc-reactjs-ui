@@ -5,9 +5,9 @@ import MenuItemSingle from './supporting-elements/MenuItemSingle';
 import '../styling/ui-styles.css';
 
 /**
- * Menu bar component for rendering navigation tabs for your web application.
+ * Menu bar component for rendering navigation links for your web application.
  * 
- * You can render any number of menu bar items within the menu bar container including single and dropdown menu items. These items will help your users to navigate around your
+ * You can render any number of menu bar items within the container including single and dropdown menu items. These items will help your users to navigate around your
  * web application.
  */
 class Menu extends React.Component {
