@@ -1,8 +1,10 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import {
   Header,
   HeaderLogo,
-  HeaderTitleAndSubtitle
+  HeaderTitleAndSubtitle,
+  Menu
 } from '../src';
 import headerLogoImage from './images/storybook-header-logo.png';
 import newYearImage1 from './images/new-year/new-year-8.png';
@@ -150,12 +152,53 @@ if (month === 1) {
   }
 }
 
+/* Create the list of mock data items */
+const testMenuItemsList = [
+  {
+    route: '/test-item-1',
+    title: 'Menu Item 1',
+  },
+  {
+    title: 'Dropdown Menu Item 1',
+    dropdownMenuItemsList: [
+      {
+        route: '/test-dropdown-item-1-1',
+        title: 'Dropdown Menu Item 1.1',
+      },
+      {
+        route: '/test-dropdown-item-1-2',
+        title: 'Dropdown Menu Item 1.2',
+      },
+    ],
+  },
+  {
+    route: '/test-item-2',
+    title: 'Menu Item 2',
+  },
+  {
+    title: 'Dropdown Menu Item 2',
+    dropdownMenuItemsList: [
+      {
+        route: '/test-dropdown-item-2-1',
+        title: 'Dropdown Menu Item 2.1',
+      },
+      {
+        route: '/test-dropdown-item-2-2',
+        title: 'Dropdown Menu Item 2.2',
+      },
+    ],
+  },
+];
+
 const DateTestTemplate = () => {
 	return <React.Fragment>
 		<Header id="ajc-header-id-date" backgroundColour="grey" topBorder="red" imageId="header-image-id-date" imageSrc={imageToBeRendered}>
       <HeaderLogo id="ajc-header-logo-id" imageSrc={headerLogoImage} />
       <HeaderTitleAndSubtitle id="ajc-header-title-subtitle-id" titleTextContent="Web Application Title" subtitleTextContent="This is the subtitle for the application" />
     </Header>
+    <BrowserRouter>
+      <Menu id="ajc-menu-id" menuItemsList={testMenuItemsList} colour="red" />
+    </BrowserRouter>
 	</React.Fragment>;
 }
 
