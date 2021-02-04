@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItemDropdown Default props and rendering verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-item-single"
+    id="test-id"
+  >
+    <div
+      className="ajc-menu-bar-item-content ajc-menu-bar-item-grey"
+      data-expanded="false"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu
+       ▾  
+    </div>
+    <div
+      className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
+      id="test-id--content-parent"
+    >
+      <a
+        className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+        href="/test-menu-item-1"
+        id="test-id--content-parent--dropdown-menu-item-0"
+        onClick={[Function]}
+      >
+          
+        Dropdown Menu Item 1
+         ▸  
+      </a>
+      <a
+        className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+        href="/test-menu-item-2"
+        id="test-id--content-parent--dropdown-menu-item-1"
+        onClick={[Function]}
+      >
+          
+        Dropdown Menu Item 2
+         ▸  
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MenuItemDropdown Transferred props and rendering - Component in a red colour verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-menu-bar-item-single"
+    id="test-id"
+  >
+    <div
+      className="ajc-menu-bar-item-content ajc-menu-bar-item-red"
+      data-expanded="false"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu
+       ▾  
+    </div>
+    <div
+      className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
+      id="test-id--content-parent"
+    >
+      <a
+        className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+        href="/test-menu-item-1"
+        id="test-id--content-parent--dropdown-menu-item-0"
+        onClick={[Function]}
+      >
+          
+        Dropdown Menu Item 1
+         ▸  
+      </a>
+      <a
+        className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+        href="/test-menu-item-2"
+        id="test-id--content-parent--dropdown-menu-item-1"
+        onClick={[Function]}
+      >
+          
+        Dropdown Menu Item 2
+         ▸  
+      </a>
+    </div>
+  </div>
+</div>
+`;
