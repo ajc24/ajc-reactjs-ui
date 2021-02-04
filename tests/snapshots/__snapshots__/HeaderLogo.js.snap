@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLogo Default props and rendering - Image src as a string verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <img
+    className="ajc-header-logo"
+    id="test-logo-id"
+    onLoad={[Function]}
+    role="presentation"
+    src="../../stories/images/storybook-header-logo.png"
+  />
+</div>
+`;
+
+exports[`HeaderLogo Default props and rendering - Image src as an import of image data verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <img
+    className="ajc-header-logo"
+    id="test-logo-id"
+    onLoad={[Function]}
+    role="presentation"
+    src={Object {}}
+  />
+</div>
+`;
