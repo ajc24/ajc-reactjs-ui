@@ -236,6 +236,36 @@
   visibility: hidden;
 }
 
+.ajc-menu-bar-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 55px;
+  min-height: 55px;
+  max-height: 55px;
+  width: 100%;
+  min-width: 683px;
+}
+
+.ajc-menu-bar-content-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1346px;
+  min-width: 683px;
+}
+
+.ajc-menu-bar-content-outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .ajc-menu-bar-item-content {
   display: flex;
   align-items: center;
