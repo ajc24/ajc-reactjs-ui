@@ -157,7 +157,7 @@
 .ajc-header-title-subtitle-container {
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  padding-top: 4px;
   height: 145px;
   min-height: 145px;
   max-height: 145px;
@@ -181,6 +181,49 @@
   flex-direction: column-reverse;
   padding-bottom: 2.5px;
   height: 80px;
+}
+
+.ajc-menu-bar-item-content {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.ajc-menu-bar-item-grey {
+  background: transparent;
+  transition: none;
+  color: #ffffff;
+}
+
+.ajc-menu-bar-item-grey:hover {
+  background: #939393;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.ajc-menu-bar-item-red {
+  background: transparent;
+  transition: none;
+  color: #ffffff;
+}
+
+.ajc-menu-bar-item-red:hover {
+  background: #d32506;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.ajc-menu-bar-item-single {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .ajc-text-black {
