@@ -1,5 +1,10 @@
 import React from 'react';
-import { Header } from '../src';
+import {
+  Header,
+  HeaderLogo,
+  HeaderTitleAndSubtitle
+} from '../src';
+import headerLogoImage from './images/storybook-header-logo.png';
 import newYearImage1 from './images/new-year/new-year-8.png';
 import newYearImage2 from './images/new-year/new-year-9.png';
 import newYearImage3 from './images/new-year/new-year-10.png';
@@ -148,7 +153,8 @@ if (month === 1) {
 const DateTestTemplate = () => {
 	return <React.Fragment>
 		<Header id="ajc-header-id-date" backgroundColour="grey" topBorder="red" imageId="header-image-id-date" imageSrc={imageToBeRendered}>
-      Test
+      <HeaderLogo id="ajc-header-logo-id" imageSrc={headerLogoImage} />
+      <HeaderTitleAndSubtitle id="ajc-header-title-subtitle-id" titleTextContent="Web Application Title" subtitleTextContent="This is the subtitle for the application" />
     </Header>
 	</React.Fragment>;
 }
