@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownMenuContainerAndItems Default props and rendering - Component marked as hidden verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
+    id="test-id"
+  >
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+      href="/test-menu-item-1"
+      id="test-id--dropdown-menu-item-0"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 1
+       ▸  
+    </a>
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+      href="/test-menu-item-2"
+      id="test-id--dropdown-menu-item-1"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 2
+       ▸  
+    </a>
+  </div>
+</div>
+`;
+
+exports[`DropdownMenuContainerAndItems Transferred props and rendering - Component in red and marked as hidden verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
+    id="test-id"
+  >
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+      href="/test-menu-item-1"
+      id="test-id--dropdown-menu-item-0"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 1
+       ▸  
+    </a>
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+      href="/test-menu-item-2"
+      id="test-id--dropdown-menu-item-1"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 2
+       ▸  
+    </a>
+  </div>
+</div>
+`;
+
+exports[`DropdownMenuContainerAndItems Transferred props and rendering - Component in red and marked as visible verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-visible ajc-visible"
+    id="test-id"
+  >
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+      href="/test-menu-item-1"
+      id="test-id--dropdown-menu-item-0"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 1
+       ▸  
+    </a>
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
+      href="/test-menu-item-2"
+      id="test-id--dropdown-menu-item-1"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 2
+       ▸  
+    </a>
+  </div>
+</div>
+`;
+
+exports[`DropdownMenuContainerAndItems Transferred props and rendering - Component marked as visible verifies the snapshot for the component 1`] = `
+<div
+  role="navigation"
+>
+  <div
+    className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-visible ajc-visible"
+    id="test-id"
+  >
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+      href="/test-menu-item-1"
+      id="test-id--dropdown-menu-item-0"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 1
+       ▸  
+    </a>
+    <a
+      className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
+      href="/test-menu-item-2"
+      id="test-id--dropdown-menu-item-1"
+      onClick={[Function]}
+    >
+        
+      Dropdown Menu Item 2
+       ▸  
+    </a>
+  </div>
+</div>
+`;
