@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderTitleAndSubtitle Default props and rendering - Header title and subtitle with black text and white outline verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <div
+    className="ajc-header-title-subtitle-container ajc-default"
+    id="test-header-title-and-subtitle-id"
+  >
+    <div
+      className="ajc-header-title-subtitle-top"
+    >
+      <h1
+        className="ajc-header-title-subtitle-heading-one ajc-header-text-outline-white ajc-text-black"
+      >
+        Web Application Title
+      </h1>
+    </div>
+    <div
+      className="ajc-header-title-subtitle-bottom"
+    >
+      <h2
+        className="ajc-header-title-subtitle-heading-two ajc-header-text-outline-white ajc-text-black"
+      >
+        Web application subtitle / description text goes here
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HeaderTitleAndSubtitle Transferred props and rendering - Header title and subtitle with white text and black outline verifies the snapshot for the component 1`] = `
+<div
+  role="banner"
+>
+  <div
+    className="ajc-header-title-subtitle-container ajc-default"
+    id="test-header-title-and-subtitle-id"
+  >
+    <div
+      className="ajc-header-title-subtitle-top"
+    >
+      <h1
+        className="ajc-header-title-subtitle-heading-one ajc-header-text-outline-black ajc-text-white"
+      >
+        Web Application Title
+      </h1>
+    </div>
+    <div
+      className="ajc-header-title-subtitle-bottom"
+    >
+      <h2
+        className="ajc-header-title-subtitle-heading-two ajc-header-text-outline-black ajc-text-white"
+      >
+        Web application subtitle / description text goes here
+      </h2>
+    </div>
+  </div>
+</div>
+`;
