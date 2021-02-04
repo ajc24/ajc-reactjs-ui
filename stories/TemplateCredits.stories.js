@@ -44,7 +44,7 @@ import restOfYearImage10 from './images/rest-of-year/rest-of-year-10.png';
 
 export default {
 	component: Header,
-	title: 'Templates/Header',
+	title: 'Templates/Website',
 };
 
 /* Set the header depending on the current date */
@@ -155,42 +155,12 @@ if (month === 1) {
 /* Create the list of mock data items */
 const testMenuItemsList = [
   {
-    route: '/test-item-1',
-    title: 'Menu Item 1',
-  },
-  {
-    title: 'Dropdown Menu Item 1',
-    dropdownMenuItemsList: [
-      {
-        route: '/test-dropdown-item-1-1',
-        title: 'Dropdown Menu Item 1.1',
-      },
-      {
-        route: '/test-dropdown-item-1-2',
-        title: 'Dropdown Menu Item 1.2',
-      },
-    ],
-  },
-  {
-    route: '/test-item-2',
-    title: 'Menu Item 2',
-  },
-  {
-    title: 'Dropdown Menu Item 2',
-    dropdownMenuItemsList: [
-      {
-        route: '/test-dropdown-item-2-1',
-        title: 'Dropdown Menu Item 2.1',
-      },
-      {
-        route: '/test-dropdown-item-2-2',
-        title: 'Dropdown Menu Item 2.2',
-      },
-    ],
+    route: '/',
+    title: 'Credits',
   },
 ];
 
-const DateTestTemplate = () => {
+const CreditsTemplate = () => {
 	return <React.Fragment>
 		<Header id="ajc-header-id-date" backgroundColour="grey" topBorder="red" imageId="header-image-id-date" imageSrc={imageToBeRendered}>
       <HeaderLogo id="ajc-header-logo-id" imageSrc={headerLogoImage} />
@@ -202,8 +172,8 @@ const DateTestTemplate = () => {
 	</React.Fragment>;
 }
 
-export const DateTest = DateTestTemplate.bind({});
-DateTest.parameters = {
+export const CreditsPage = CreditsTemplate.bind({});
+CreditsPage.parameters = {
   docs: {
     page: null
   }
