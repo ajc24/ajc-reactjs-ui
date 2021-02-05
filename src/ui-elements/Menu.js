@@ -9,6 +9,8 @@ import '../styling/ui-styles.css';
  * 
  * You can render any number of menu bar items within the container including single and dropdown menu items. These items will help your users to navigate around your
  * web application.
+ * 
+ * This menu component is designed to support desktop resolutions and mobile resolutions and will collapse / expand to suit all screen sizes.
  */
 class Menu extends React.Component {
 	constructor(props) {
