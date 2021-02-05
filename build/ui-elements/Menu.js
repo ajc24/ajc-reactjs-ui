@@ -22,6 +22,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * 
  * You can render any number of menu bar items within the container including single and dropdown menu items. These items will help your users to navigate around your
  * web application.
+ * 
+ * This menu component is designed to support desktop resolutions and mobile resolutions and will collapse / expand to suit all screen sizes.
  */
 class Menu extends _react.default.Component {
   constructor(props) {

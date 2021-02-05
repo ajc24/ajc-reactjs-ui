@@ -21,6 +21,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Header components can be rendered with an upper grey border of 5px, an upper red border of 5px or no border at all. It can also be rendered with a white, grey, yellow or a
  * transparent background. It is also possible to render an image as the background for the component. You can render any component(s) you wish inside its inner container such
  * as text components, images etc. which will further describe your web page to your users.
+ * 
+ * This header component is designed to support desktop resolutions and mobile resolutions and will collapse / expand to suit all screen sizes.
  */
 class Header extends _react.default.Component {
   constructor(props) {

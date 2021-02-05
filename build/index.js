@@ -21,6 +21,12 @@ Object.defineProperty(exports, "HeaderTitleAndSubtitle", {
     return _HeaderTitleAndSubtitle.default;
   }
 });
+Object.defineProperty(exports, "MainContentPanel", {
+  enumerable: true,
+  get: function () {
+    return _MainContentPanel.default;
+  }
+});
 Object.defineProperty(exports, "Menu", {
   enumerable: true,
   get: function () {
@@ -45,6 +51,8 @@ var _Header = _interopRequireDefault(require("./ui-elements/Header"));
 var _HeaderLogo = _interopRequireDefault(require("./ui-elements/HeaderLogo"));
 
 var _HeaderTitleAndSubtitle = _interopRequireDefault(require("./ui-elements/HeaderTitleAndSubtitle"));
+
+var _MainContentPanel = _interopRequireDefault(require("./ui-elements/MainContentPanel"));
 
 var _Menu = _interopRequireDefault(require("./ui-elements/Menu"));
 
