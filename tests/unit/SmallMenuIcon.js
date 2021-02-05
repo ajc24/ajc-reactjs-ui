@@ -67,7 +67,7 @@ describe('SmallMenuIcon', () => {
     });
   });
 
-  describe('Default props and rendering - Component in white colour', () => {
+  describe('Transferred props and rendering - Component in white colour', () => {
     let wrapper;
 
     beforeAll(() => {
