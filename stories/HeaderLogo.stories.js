@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, HeaderLogo } from '../src';
+import { HeaderLogo } from '../src';
 import testImage from './images/storybook-header-logo.png';
 
 export default {
