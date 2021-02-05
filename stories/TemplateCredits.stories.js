@@ -4,6 +4,7 @@ import {
   Header,
   HeaderLogo,
   HeaderTitleAndSubtitle,
+  MainContentPanel,
   Menu
 } from '../src';
 import headerLogoImage from './images/storybook-header-logo.png';
@@ -155,71 +156,8 @@ if (month === 1) {
 const testMenuItemsList = [
   {
     route: '#',
-    title: 'Home / News',
-  },
-  {
-    title: 'Articles',
-    dropdownMenuItemsList: [
-      {
-        route: '/#',
-        title: 'Search',
-      },
-      {
-        route: '/#',
-        title: 'Article 1',
-      },
-      {
-        route: '/#',
-        title: 'Article 2',
-      },
-    ],
-  },
-  {
-    title: 'Editor',
-    dropdownMenuItemsList: [
-      {
-        route: '/#',
-        title: 'Write a new article',
-      },
-      {
-        route: '/#',
-        title: 'Resume an in progress article',
-      },
-      {
-        route: '/#',
-        title: 'Edit a published article',
-      },
-    ],
-  },
-  {
-    route: '#',
     title: 'Credits',
-  },
-  {
-    route: '#',
-    title: 'About',
-  },
-  {
-    title: 'Account',
-    dropdownMenuItemsList: [
-      {
-        route: '/#',
-        title: 'Administration',
-      },
-      {
-        route: '/#',
-        title: 'Register for an account',
-      },
-      {
-        route: '/#',
-        title: 'Login',
-      },
-      {
-        route: '/#',
-        title: 'Logout',
-      },
-    ],
-  },
+  }
 ];
 
 const CreditsTemplate = () => {
@@ -231,6 +169,9 @@ const CreditsTemplate = () => {
     <BrowserRouter>
       <Menu id="ajc-menu-id" menuItemsList={testMenuItemsList} colour="red" />
     </BrowserRouter>
+    <MainContentPanel title="Credits" colour="grey">
+      <p>Test text</p>
+    </MainContentPanel>
 	</React.Fragment>;
 }
 
