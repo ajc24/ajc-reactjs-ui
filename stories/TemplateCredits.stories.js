@@ -155,8 +155,71 @@ if (month === 1) {
 /* Create the list of mock data items */
 const testMenuItemsList = [
   {
-    route: '/',
+    route: '#',
+    title: 'Home / News',
+  },
+  {
+    title: 'Articles',
+    dropdownMenuItemsList: [
+      {
+        route: '/#',
+        title: 'Search',
+      },
+      {
+        route: '/#',
+        title: 'Article 1',
+      },
+      {
+        route: '/#',
+        title: 'Article 2',
+      },
+    ],
+  },
+  {
+    title: 'Editor',
+    dropdownMenuItemsList: [
+      {
+        route: '/#',
+        title: 'Write a new article',
+      },
+      {
+        route: '/#',
+        title: 'Resume an in progress article',
+      },
+      {
+        route: '/#',
+        title: 'Edit a published article',
+      },
+    ],
+  },
+  {
+    route: '#',
     title: 'Credits',
+  },
+  {
+    route: '#',
+    title: 'About',
+  },
+  {
+    title: 'Account',
+    dropdownMenuItemsList: [
+      {
+        route: '/#',
+        title: 'Administration',
+      },
+      {
+        route: '/#',
+        title: 'Register for an account',
+      },
+      {
+        route: '/#',
+        title: 'Login',
+      },
+      {
+        route: '/#',
+        title: 'Logout',
+      },
+    ],
   },
 ];
 
