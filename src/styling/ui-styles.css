@@ -26,6 +26,13 @@
   background-color: #FFFBDD;
 }
 
+.ajc-body-full-screen {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .ajc-border-colour-white {
   border-color: #ffffff;
 }
@@ -36,7 +43,7 @@
 
 .ajc-default {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .ajc-dropdown-menu-container {
@@ -248,6 +255,34 @@
 
 .ajc-hidden {
   visibility: hidden;
+}
+
+.ajc-main-content-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 440px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 703px;
+}
+
+.ajc-main-content-inner {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  max-width: 1180px;
+  min-width: 683px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ajc-main-content-outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
 }
 
 .ajc-menu-bar-container {
