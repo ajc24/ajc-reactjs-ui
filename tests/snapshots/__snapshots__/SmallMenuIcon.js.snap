@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SmallMenuIcon Default props and rendering - Component in black colour verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-small-menu-icon-container ajc-default"
+  role="presentation"
+>
+  <div
+    className="ajc-small-menu-icon-upper ajc-background-black"
+  />
+  <div
+    className="ajc-small-menu-icon-upper ajc-background-black"
+  />
+  <div
+    className="ajc-small-menu-icon-lower ajc-background-black"
+  />
+</div>
+`;
+
+exports[`SmallMenuIcon Transferred props and rendering - Component in white colour verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-small-menu-icon-container ajc-default"
+  role="presentation"
+>
+  <div
+    className="ajc-small-menu-icon-upper ajc-background-white"
+  />
+  <div
+    className="ajc-small-menu-icon-upper ajc-background-white"
+  />
+  <div
+    className="ajc-small-menu-icon-lower ajc-background-white"
+  />
+</div>
+`;

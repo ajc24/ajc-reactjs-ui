@@ -45,13 +45,13 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             role="presentation"
           >
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-lower"
+              className="ajc-small-menu-icon-lower ajc-background-white"
             />
           </div>
             
@@ -70,7 +70,7 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             Dropdown Menu Item 1.1
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -85,7 +85,7 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             Dropdown Menu Item 1.2
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -123,13 +123,13 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             role="presentation"
           >
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-lower"
+              className="ajc-small-menu-icon-lower ajc-background-white"
             />
           </div>
             
@@ -148,7 +148,7 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             Dropdown Menu Item 2.1
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -163,7 +163,7 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
             Dropdown Menu Item 2.2
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -220,13 +220,13 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             role="presentation"
           >
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-lower"
+              className="ajc-small-menu-icon-lower ajc-background-white"
             />
           </div>
             
@@ -245,7 +245,7 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             Dropdown Menu Item 1.1
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -260,7 +260,7 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             Dropdown Menu Item 1.2
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -298,13 +298,13 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             role="presentation"
           >
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-upper"
+              className="ajc-small-menu-icon-upper ajc-background-white"
             />
             <div
-              className="ajc-small-menu-icon-lower"
+              className="ajc-small-menu-icon-lower ajc-background-white"
             />
           </div>
             
@@ -323,7 +323,7 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             Dropdown Menu Item 2.1
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               
@@ -338,7 +338,7 @@ exports[`Menu Transferred props and rendering: Component with red background ver
             Dropdown Menu Item 2.2
               
             <div
-              className="ajc-small-right-arrow-icon-container ajc-default"
+              className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
               role="presentation"
             />
               

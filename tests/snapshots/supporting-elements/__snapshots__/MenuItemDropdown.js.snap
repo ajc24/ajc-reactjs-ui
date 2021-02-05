@@ -21,13 +21,13 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
         role="presentation"
       >
         <div
-          className="ajc-small-menu-icon-upper"
+          className="ajc-small-menu-icon-upper ajc-background-white"
         />
         <div
-          className="ajc-small-menu-icon-upper"
+          className="ajc-small-menu-icon-upper ajc-background-white"
         />
         <div
-          className="ajc-small-menu-icon-lower"
+          className="ajc-small-menu-icon-lower ajc-background-white"
         />
       </div>
         
@@ -46,7 +46,7 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
         Dropdown Menu Item 1
           
         <div
-          className="ajc-small-right-arrow-icon-container ajc-default"
+          className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
           role="presentation"
         />
           
@@ -61,7 +61,7 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
         Dropdown Menu Item 2
           
         <div
-          className="ajc-small-right-arrow-icon-container ajc-default"
+          className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
           role="presentation"
         />
           
@@ -92,13 +92,13 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
         role="presentation"
       >
         <div
-          className="ajc-small-menu-icon-upper"
+          className="ajc-small-menu-icon-upper ajc-background-white"
         />
         <div
-          className="ajc-small-menu-icon-upper"
+          className="ajc-small-menu-icon-upper ajc-background-white"
         />
         <div
-          className="ajc-small-menu-icon-lower"
+          className="ajc-small-menu-icon-lower ajc-background-white"
         />
       </div>
         
@@ -117,7 +117,7 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
         Dropdown Menu Item 1
           
         <div
-          className="ajc-small-right-arrow-icon-container ajc-default"
+          className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
           role="presentation"
         />
           
@@ -132,7 +132,7 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
         Dropdown Menu Item 2
           
         <div
-          className="ajc-small-right-arrow-icon-container ajc-default"
+          className="ajc-small-right-arrow-icon-container ajc-default ajc-border-colour-white"
           role="presentation"
         />
           
