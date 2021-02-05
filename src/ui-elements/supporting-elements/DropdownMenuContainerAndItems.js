@@ -72,7 +72,7 @@ class DropdownMenuContainerAndItems extends React.Component {
           this.props.dropdownMenuItemsList.map((menuItem, index) => {
             return <Link to={menuItem.route} key={`${this.props.id}--key-menu-item-${index}`} className={dropdownMenuItemStyling} id={`${this.props.id}--dropdown-menu-item-${index}`}>
               &nbsp;&nbsp;{menuItem.title}&nbsp;&nbsp;
-              <SmallRightArrowIcon />
+              <SmallRightArrowIcon colour="white" />
               &nbsp;&nbsp;
             </Link>
           })

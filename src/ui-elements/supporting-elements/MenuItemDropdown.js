@@ -70,7 +70,7 @@ class MenuItemDropdown extends React.Component {
       <div id={`${this.props.id}`} className={containerStyling}>
         <div className={menuBarItemStyling} onClick={onClickFunctionality} data-expanded={`${this.state.isExpanded}`}>
           &nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;
-          <SmallMenuIcon />
+          <SmallMenuIcon colour="white" />
           &nbsp;&nbsp;
         </div>
         <DropdownMenuContainerAndItems id={`${this.props.id}--content-parent`} colour={this.props.colour} parentId={this.props.id} isDisplayed={this.state.isExpanded} dropdownMenuItemsList={this.props.dropdownMenuItemsList} />
