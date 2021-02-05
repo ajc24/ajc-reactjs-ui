@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainContentPanel Default props and rendering - Component with white background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-main-content-container ajc-default ajc-background-white"
+  role="region"
+>
+  <div
+    className="ajc-main-content-outer"
+  >
+    <div
+      className="ajc-main-content-inner"
+    >
+      This is a test.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MainContentPanel Transferred props and rendering - Component with grey background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-main-content-container ajc-default ajc-background-grey-1"
+  role="region"
+>
+  <div
+    className="ajc-main-content-outer"
+  >
+    <div
+      className="ajc-main-content-inner"
+    >
+      This is a test.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MainContentPanel Transferred props and rendering - Component with transparent background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-main-content-container ajc-default ajc-background-transparent"
+  role="region"
+>
+  <div
+    className="ajc-main-content-outer"
+  >
+    <div
+      className="ajc-main-content-inner"
+    >
+      This is a test.
+    </div>
+  </div>
+</div>
+`;
