@@ -1,5 +1,4 @@
 import { addParameters } from '@storybook/react';
-import customTheme from './theme';
 
 addParameters({
   options: {
