@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _SmallRightArrowIcon = _interopRequireDefault(require("../SmallRightArrowIcon"));
+
 require("../../styling/ui-styles.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -107,7 +109,9 @@ class DropdownMenuContainerAndItems extends _react.default.Component {
         key: `${_this2.props.id}--key-menu-item-${index}`,
         className: dropdownMenuItemStyling,
         id: `${_this2.props.id}--dropdown-menu-item-${index}`
-      }, "\xA0\xA0", menuItem.title, "\xA0\u25B8\xA0\xA0");
+      }, "\xA0\xA0", menuItem.title, "\xA0\xA0", /*#__PURE__*/_react.default.createElement(_SmallRightArrowIcon.default, {
+        colour: "white"
+      }), "\xA0\xA0");
     }));
   }
 

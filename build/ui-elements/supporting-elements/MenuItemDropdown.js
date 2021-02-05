@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _DropdownMenuContainerAndItems = _interopRequireDefault(require("./DropdownMenuContainerAndItems"));
 
+var _SmallMenuIcon = _interopRequireDefault(require("../SmallMenuIcon"));
+
 require("../../styling/ui-styles.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -87,26 +89,24 @@ class MenuItemDropdown extends _react.default.Component {
     /* Set the menu item component to be displayed */
 
 
-    let menuItemComponent;
+    let onClickFunctionality;
 
     if (this.state.isExpanded === true) {
-      menuItemComponent = /*#__PURE__*/_react.default.createElement("div", {
-        className: menuBarItemStyling,
-        onClick: this.hideDropdownMenu,
-        "data-expanded": `${this.state.isExpanded}`
-      }, "\xA0\xA0", this.props.title, "\xA0\u25B4\xA0\xA0");
+      onClickFunctionality = this.hideDropdownMenu;
     } else {
-      menuItemComponent = /*#__PURE__*/_react.default.createElement("div", {
-        className: menuBarItemStyling,
-        onClick: this.showDropdownMenu,
-        "data-expanded": `${this.state.isExpanded}`
-      }, "\xA0\xA0", this.props.title, "\xA0\u25BE\xA0\xA0");
+      onClickFunctionality = this.showDropdownMenu;
     }
 
     return /*#__PURE__*/_react.default.createElement("div", {
       id: `${this.props.id}`,
       className: containerStyling
-    }, menuItemComponent, /*#__PURE__*/_react.default.createElement(_DropdownMenuContainerAndItems.default, {
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: menuBarItemStyling,
+      onClick: onClickFunctionality,
+      "data-expanded": `${this.state.isExpanded}`
+    }, "\xA0\xA0", this.props.title, "\xA0\xA0", /*#__PURE__*/_react.default.createElement(_SmallMenuIcon.default, {
+      colour: "white"
+    }), "\xA0\xA0"), /*#__PURE__*/_react.default.createElement(_DropdownMenuContainerAndItems.default, {
       id: `${this.props.id}--content-parent`,
       colour: this.props.colour,
       parentId: this.props.id,

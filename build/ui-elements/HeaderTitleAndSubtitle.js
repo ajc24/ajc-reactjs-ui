@@ -17,7 +17,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Header title and subtitle component for the header section of a web page template.
  * 
  * This component is designed to render your web applications title and subtitle text content. It can be rendered with any combination of black or white text with a black or white
- * outline. You can set any text content you wish as the title text and the subtitle text. If required you can also implement a text indent which will indent all component text
+ * outline. You can set any text content you wish as the title text and the subtitle text. If required you can also implement a heading indent which will indent all component text
  * to the right by the specified number of pixels.
  * 
  * For best results this component is intended for use with the Header component.

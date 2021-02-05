@@ -39,7 +39,7 @@ class MenuItemSingle extends _react.default.Component {
     }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
       to: this.props.route,
       className: innerItemStyling
-    }, "\xA0\xA0\xA0", this.props.title, "\xA0\xA0\xA0"));
+    }, "\xA0\xA0", this.props.title, "\xA0\xA0"));
   }
 
 }

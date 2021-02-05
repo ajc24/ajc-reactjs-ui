@@ -27,6 +27,18 @@ Object.defineProperty(exports, "Menu", {
     return _Menu.default;
   }
 });
+Object.defineProperty(exports, "SmallMenuIcon", {
+  enumerable: true,
+  get: function () {
+    return _SmallMenuIcon.default;
+  }
+});
+Object.defineProperty(exports, "SmallRightArrowIcon", {
+  enumerable: true,
+  get: function () {
+    return _SmallRightArrowIcon.default;
+  }
+});
 
 var _Header = _interopRequireDefault(require("./ui-elements/Header"));
 
@@ -35,5 +47,9 @@ var _HeaderLogo = _interopRequireDefault(require("./ui-elements/HeaderLogo"));
 var _HeaderTitleAndSubtitle = _interopRequireDefault(require("./ui-elements/HeaderTitleAndSubtitle"));
 
 var _Menu = _interopRequireDefault(require("./ui-elements/Menu"));
+
+var _SmallMenuIcon = _interopRequireDefault(require("./ui-elements/SmallMenuIcon"));
+
+var _SmallRightArrowIcon = _interopRequireDefault(require("./ui-elements/SmallRightArrowIcon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
