@@ -24,7 +24,7 @@
 
 .ajc-default {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .ajc-dropdown-menu-container {
@@ -247,7 +247,8 @@
   max-height: 55px;
   width: 100%;
   max-width: 1903px;
-  min-width: 683px;
+  min-width: 703px;
+  font-size: 18px;
 }
 
 .ajc-menu-bar-content-inner {
@@ -310,8 +311,37 @@
   height: 55px;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.ajc-small-menu-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ajc-small-menu-icon-lower {
+  width: 10px;
+  height: 2px; 
+  background-color: #ffffff;
+}
+
+.ajc-small-menu-icon-upper {
+  width: 10px;
+  height: 2px; 
+  background-color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.ajc-small-right-arrow-icon-container {
+  display: flex;
+  height: 5px;
+  width: 5px;
+  border: solid #ffffff;
+  border-width: 2px;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-45deg);
 }
 
 .ajc-text-black {
