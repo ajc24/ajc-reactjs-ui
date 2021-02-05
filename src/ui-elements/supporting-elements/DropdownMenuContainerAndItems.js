@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import SmallRightArrowIcon from '../SmallRightArrowIcon';
 import '../../styling/ui-styles.css';
 
 class DropdownMenuContainerAndItems extends React.Component {
@@ -70,7 +71,10 @@ class DropdownMenuContainerAndItems extends React.Component {
         {
           this.props.dropdownMenuItemsList.map((menuItem, index) => {
             return <Link to={menuItem.route} key={`${this.props.id}--key-menu-item-${index}`} className={dropdownMenuItemStyling} id={`${this.props.id}--dropdown-menu-item-${index}`}>
-              &nbsp;&nbsp;{menuItem.title}&nbsp;&#9656;&nbsp;&nbsp;</Link>
+              &nbsp;&nbsp;{menuItem.title}&nbsp;&nbsp;
+              <SmallRightArrowIcon />
+              &nbsp;&nbsp;
+            </Link>
           })
         }
       </div>

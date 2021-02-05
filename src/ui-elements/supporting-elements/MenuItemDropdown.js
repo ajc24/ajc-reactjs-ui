@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DropdownMenuContainerAndItems from './DropdownMenuContainerAndItems';
+import SmallMenuIcon from '../SmallMenuIcon';
 import '../../styling/ui-styles.css';
 
 class MenuItemDropdown extends React.Component {
@@ -59,19 +60,19 @@ class MenuItemDropdown extends React.Component {
       menuBarItemStyling += ' ajc-menu-bar-item-grey';
     }
     /* Set the menu item component to be displayed */
-    let menuItemComponent;
+    let onClickFunctionality;
     if (this.state.isExpanded === true) {
-      menuItemComponent = <div className={menuBarItemStyling} onClick={this.hideDropdownMenu} data-expanded={`${this.state.isExpanded}`}>
-          &nbsp;&nbsp;{this.props.title}&nbsp;&#9652;&nbsp;&nbsp;
-        </div>;
+      onClickFunctionality = this.hideDropdownMenu;
     } else {
-      menuItemComponent = <div className={menuBarItemStyling} onClick={this.showDropdownMenu} data-expanded={`${this.state.isExpanded}`}>
-          &nbsp;&nbsp;{this.props.title}&nbsp;&#9662;&nbsp;&nbsp;
-        </div>;
+      onClickFunctionality = this.showDropdownMenu;
     }
     return (
       <div id={`${this.props.id}`} className={containerStyling}>
-        {menuItemComponent}
+        <div className={menuBarItemStyling} onClick={onClickFunctionality} data-expanded={`${this.state.isExpanded}`}>
+          &nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;
+          <SmallMenuIcon />
+          &nbsp;&nbsp;
+        </div>
         <DropdownMenuContainerAndItems id={`${this.props.id}--content-parent`} colour={this.props.colour} parentId={this.props.id} isDisplayed={this.state.isExpanded} dropdownMenuItemsList={this.props.dropdownMenuItemsList} />
       </div>
     );

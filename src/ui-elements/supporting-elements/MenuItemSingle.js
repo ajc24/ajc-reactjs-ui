@@ -22,7 +22,7 @@ class MenuItemSingle extends React.Component {
     return (
       <div id={this.props.id} className={itemStyling}>
         <Link to={this.props.route} className={innerItemStyling}>
-          &nbsp;&nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;
         </Link>
       </div>
     );
