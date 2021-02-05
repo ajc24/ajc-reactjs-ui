@@ -15,7 +15,22 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
     >
         
       Dropdown Menu
-       ▾  
+        
+      <div
+        className="ajc-small-menu-icon-container ajc-default"
+        role="presentation"
+      >
+        <div
+          className="ajc-small-menu-icon-upper"
+        />
+        <div
+          className="ajc-small-menu-icon-upper"
+        />
+        <div
+          className="ajc-small-menu-icon-lower"
+        />
+      </div>
+        
     </div>
     <div
       className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -29,7 +44,12 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
       >
           
         Dropdown Menu Item 1
-         ▸  
+          
+        <div
+          className="ajc-small-right-arrow-icon-container ajc-default"
+          role="presentation"
+        />
+          
       </a>
       <a
         className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
@@ -39,7 +59,12 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
       >
           
         Dropdown Menu Item 2
-         ▸  
+          
+        <div
+          className="ajc-small-right-arrow-icon-container ajc-default"
+          role="presentation"
+        />
+          
       </a>
     </div>
   </div>
@@ -61,7 +86,22 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
     >
         
       Dropdown Menu
-       ▾  
+        
+      <div
+        className="ajc-small-menu-icon-container ajc-default"
+        role="presentation"
+      >
+        <div
+          className="ajc-small-menu-icon-upper"
+        />
+        <div
+          className="ajc-small-menu-icon-upper"
+        />
+        <div
+          className="ajc-small-menu-icon-lower"
+        />
+      </div>
+        
     </div>
     <div
       className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -75,7 +115,12 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
       >
           
         Dropdown Menu Item 1
-         ▸  
+          
+        <div
+          className="ajc-small-right-arrow-icon-container ajc-default"
+          role="presentation"
+        />
+          
       </a>
       <a
         className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
@@ -85,7 +130,12 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
       >
           
         Dropdown Menu Item 2
-         ▸  
+          
+        <div
+          className="ajc-small-right-arrow-icon-container ajc-default"
+          role="presentation"
+        />
+          
       </a>
     </div>
   </div>

@@ -23,9 +23,9 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           href="/test-item-1"
           onClick={[Function]}
         >
-             
+            
           Menu Item 1
-             
+            
         </a>
       </div>
       <div
@@ -39,7 +39,22 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
         >
             
           Dropdown Menu Item 1
-           ▾  
+            
+          <div
+            className="ajc-small-menu-icon-container ajc-default"
+            role="presentation"
+          >
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-lower"
+            />
+          </div>
+            
         </div>
         <div
           className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -53,7 +68,12 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           >
               
             Dropdown Menu Item 1.1
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
           <a
             className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
@@ -63,7 +83,12 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           >
               
             Dropdown Menu Item 1.2
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
         </div>
       </div>
@@ -76,9 +101,9 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           href="/test-item-2"
           onClick={[Function]}
         >
-             
+            
           Menu Item 2
-             
+            
         </a>
       </div>
       <div
@@ -92,7 +117,22 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
         >
             
           Dropdown Menu Item 2
-           ▾  
+            
+          <div
+            className="ajc-small-menu-icon-container ajc-default"
+            role="presentation"
+          >
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-lower"
+            />
+          </div>
+            
         </div>
         <div
           className="ajc-dropdown-menu-container ajc-background-grey-2 ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -106,7 +146,12 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           >
               
             Dropdown Menu Item 2.1
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
           <a
             className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
@@ -116,7 +161,12 @@ exports[`Menu Default props and rendering verifies the snapshot for the componen
           >
               
             Dropdown Menu Item 2.2
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
         </div>
       </div>
@@ -148,9 +198,9 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           href="/test-item-1"
           onClick={[Function]}
         >
-             
+            
           Menu Item 1
-             
+            
         </a>
       </div>
       <div
@@ -164,7 +214,22 @@ exports[`Menu Transferred props and rendering: Component with red background ver
         >
             
           Dropdown Menu Item 1
-           ▾  
+            
+          <div
+            className="ajc-small-menu-icon-container ajc-default"
+            role="presentation"
+          >
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-lower"
+            />
+          </div>
+            
         </div>
         <div
           className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -178,7 +243,12 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           >
               
             Dropdown Menu Item 1.1
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
           <a
             className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
@@ -188,7 +258,12 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           >
               
             Dropdown Menu Item 1.2
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
         </div>
       </div>
@@ -201,9 +276,9 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           href="/test-item-2"
           onClick={[Function]}
         >
-             
+            
           Menu Item 2
-             
+            
         </a>
       </div>
       <div
@@ -217,7 +292,22 @@ exports[`Menu Transferred props and rendering: Component with red background ver
         >
             
           Dropdown Menu Item 2
-           ▾  
+            
+          <div
+            className="ajc-small-menu-icon-container ajc-default"
+            role="presentation"
+          >
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-upper"
+            />
+            <div
+              className="ajc-small-menu-icon-lower"
+            />
+          </div>
+            
         </div>
         <div
           className="ajc-dropdown-menu-container ajc-background-red ajc-dropdown-menu-container-hidden ajc-hidden"
@@ -231,7 +321,12 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           >
               
             Dropdown Menu Item 2.1
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
           <a
             className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
@@ -241,7 +336,12 @@ exports[`Menu Transferred props and rendering: Component with red background ver
           >
               
             Dropdown Menu Item 2.2
-             ▸  
+              
+            <div
+              className="ajc-small-right-arrow-icon-container ajc-default"
+              role="presentation"
+            />
+              
           </a>
         </div>
       </div>

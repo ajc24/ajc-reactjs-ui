@@ -16,7 +16,12 @@ exports[`DropdownMenuContainerAndItems Default props and rendering - Component m
     >
         
       Dropdown Menu Item 1
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
     <a
       className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
@@ -26,7 +31,12 @@ exports[`DropdownMenuContainerAndItems Default props and rendering - Component m
     >
         
       Dropdown Menu Item 2
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
   </div>
 </div>
@@ -48,7 +58,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 1
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
     <a
       className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
@@ -58,7 +73,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 2
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
   </div>
 </div>
@@ -80,7 +100,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 1
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
     <a
       className="ajc-dropdown-menu-item ajc-menu-bar-item-red"
@@ -90,7 +115,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 2
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
   </div>
 </div>
@@ -112,7 +142,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 1
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
     <a
       className="ajc-dropdown-menu-item ajc-menu-bar-item-grey"
@@ -122,7 +157,12 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
     >
         
       Dropdown Menu Item 2
-       ▸  
+        
+      <div
+        className="ajc-small-right-arrow-icon-container ajc-default"
+        role="presentation"
+      />
+        
     </a>
   </div>
 </div>

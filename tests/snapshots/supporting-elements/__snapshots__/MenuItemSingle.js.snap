@@ -13,9 +13,9 @@ exports[`MenuItemSingle Default props and rendering verifies the snapshot for th
       href="/test-route"
       onClick={[Function]}
     >
-         
+        
       Menu Item (Single)
-         
+        
     </a>
   </div>
 </div>
@@ -34,9 +34,9 @@ exports[`MenuItemSingle Transferred props and rendering: MenuItemSingle in red v
       href="/test-route"
       onClick={[Function]}
     >
-         
+        
       Menu Item (Single)
-         
+        
     </a>
   </div>
 </div>
