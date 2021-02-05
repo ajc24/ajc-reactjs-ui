@@ -5,7 +5,8 @@ import '../styling/ui-styles.css';
 /**
  * The MainContentPanel component acts as a container for the main content of each page in your web application.
  * 
- * You can render any component(s) you wish as your main content. You may choose to render this component with a transparent or grey background.
+ * You can render any component(s) you wish as your main content. You may choose to render this component with a transparent or grey background. This content panel is designed to support desktop
+ * resolutions and mobile resolutions and will collapse / expand to suit all screen sizes.
  */
 class MainContentPanel extends React.Component {
   constructor(props) {
