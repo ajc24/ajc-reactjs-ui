@@ -43,7 +43,6 @@ import restOfYearImage9 from './images/rest-of-year/rest-of-year-9.png';
 import restOfYearImage10 from './images/rest-of-year/rest-of-year-10.png';
 
 export default {
-	component: Header,
 	title: 'Templates/Website',
 };
 
