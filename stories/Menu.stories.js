@@ -10,35 +10,35 @@ export default {
 const testMenuItemsList = [
   {
     route: '/test-item-1',
-    title: 'Menu Item 1',
+    title: 'Link 1',
   },
   {
-    title: 'Dropdown Menu Item 1',
+    title: 'Dropdown 1',
     dropdownMenuItemsList: [
       {
         route: '/test-dropdown-item-1-1',
-        title: 'Dropdown Menu Item 1.1',
+        title: 'Dropdown Link 1.1',
       },
       {
         route: '/test-dropdown-item-1-2',
-        title: 'Dropdown Menu Item 1.2',
+        title: 'Dropdown Link 1.2',
       },
     ],
   },
   {
     route: '/test-item-2',
-    title: 'Menu Item 2',
+    title: 'Link 2',
   },
   {
-    title: 'Dropdown Menu Item 2',
+    title: 'Dropdown 2',
     dropdownMenuItemsList: [
       {
         route: '/test-dropdown-item-2-1',
-        title: 'Dropdown Menu Item 2.1',
+        title: 'Dropdown Link 2.1',
       },
       {
         route: '/test-dropdown-item-2-2',
-        title: 'Dropdown Menu Item 2.2',
+        title: 'Dropdown Link 2.2',
       },
     ],
   },
