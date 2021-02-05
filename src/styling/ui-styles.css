@@ -1,3 +1,7 @@
+.ajc-background-black {
+  background-color: #000000;
+}
+
 .ajc-background-grey-1 {
   background-color: #F6F6F6;
 }
@@ -20,6 +24,14 @@
 
 .ajc-background-yellow {
   background-color: #FFFBDD;
+}
+
+.ajc-border-colour-white {
+  border-color: #ffffff;
+}
+
+.ajc-border-colour-black {
+  border-color: #000000;
 }
 
 .ajc-default {
@@ -318,18 +330,18 @@
 .ajc-small-menu-icon-container {
   display: flex;
   flex-direction: column;
+  width: 10px;
+  height: 10px;
 }
 
 .ajc-small-menu-icon-lower {
   width: 10px;
   height: 2px; 
-  background-color: #ffffff;
 }
 
 .ajc-small-menu-icon-upper {
   width: 10px;
   height: 2px; 
-  background-color: #ffffff;
   margin-bottom: 2px;
 }
 
@@ -337,7 +349,7 @@
   display: flex;
   height: 5px;
   width: 5px;
-  border: solid #ffffff;
+  border-style: solid;
   border-width: 2px;
   border-top: none;
   border-left: none;
