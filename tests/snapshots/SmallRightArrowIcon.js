@@ -2,7 +2,7 @@ import React from 'react';
 import { TestDev } from 'ajc-jest-enzyme';
 import { SmallRightArrowIcon } from '../../src';
 
-describe('SmallMenuIcon', () => {
+describe('SmallRightArrowIcon', () => {
   describe('Default props and rendering - Component in black colour', () => {
     let jsonSnapshot;
 
