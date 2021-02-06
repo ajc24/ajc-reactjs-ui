@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Footer", {
+  enumerable: true,
+  get: function () {
+    return _Footer.default;
+  }
+});
 Object.defineProperty(exports, "Header", {
   enumerable: true,
   get: function () {
@@ -45,6 +51,8 @@ Object.defineProperty(exports, "SmallRightArrowIcon", {
     return _SmallRightArrowIcon.default;
   }
 });
+
+var _Footer = _interopRequireDefault(require("./ui-elements/Footer"));
 
 var _Header = _interopRequireDefault(require("./ui-elements/Header"));
 
