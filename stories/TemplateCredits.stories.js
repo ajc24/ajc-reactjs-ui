@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import {
+  Footer,
   Header,
   HeaderLogo,
   HeaderTitleAndSubtitle,
@@ -172,6 +173,9 @@ const CreditsTemplate = () => {
     <MainContentPanel title="Credits" colour="grey">
       <p>Test text</p>
     </MainContentPanel>
+    <Footer colour="red">
+      Footer text goes here.
+    </Footer>
 	</React.Fragment>;
 }
 
