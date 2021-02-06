@@ -4,7 +4,7 @@ import { AccessibilityDev } from 'ajc-accessibility';
 import { TestDev } from 'ajc-jest-enzyme';
 import { MainContentPanel } from '../../src';
 
-describe('Menu', () => {
+describe('MainContentPanel', () => {
   /* Create the test data for the menu */
   let componentDidMountSpy;
   const testTimeout = AccessibilityDev.getMaximumTimeout();
