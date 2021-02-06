@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import MenuItemDropdown from '../../../src/ui-elements/supporting-elements/MenuItemDropdown';
 import DropdownMenuContainerAndItems from '../../../src/ui-elements/supporting-elements/DropdownMenuContainerAndItems';
 
-describe('Dropdown Menu', () => {
+describe('MenuItemDropdown', () => {
   /* Retrieve the timeout for jest-axe tests */
   let componentDidMountSpy;
   const testTimeout = AccessibilityDev.getMaximumTimeout();

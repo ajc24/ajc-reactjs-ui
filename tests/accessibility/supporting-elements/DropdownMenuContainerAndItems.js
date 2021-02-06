@@ -5,7 +5,7 @@ import { TestDev } from 'ajc-jest-enzyme';
 import { BrowserRouter } from 'react-router-dom';
 import DropdownMenuContainerAndItems from '../../../src/ui-elements/supporting-elements/DropdownMenuContainerAndItems';
 
-describe('Dropdown Menu Container', () => {
+describe('DropdownMenuContainerAndItems', () => {
   /* Retrieve the timeout for jest-axe tests */
   const testTimeout = AccessibilityDev.getMaximumTimeout();
 
