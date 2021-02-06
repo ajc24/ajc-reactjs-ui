@@ -56,4 +56,22 @@ describe('MainContentPanel', () => {
       expect(jsonSnapshot).toMatchSnapshot();
     });
   });
+
+  describe('Transferred props and rendering - Component with yellow background', () => {
+    let jsonSnapshot;
+
+    beforeAll(() => {
+      jsonSnapshot = TestDev.createSnapshot(
+        <React.Fragment>
+          <MainContentPanel title="Test Title" colour="yellow">
+            This is a test.
+          </MainContentPanel>
+        </React.Fragment>
+      );
+    });
+
+    it('verifies the snapshot for the component', () => {
+      expect(jsonSnapshot).toMatchSnapshot();
+    });
+  });
 });

@@ -78,4 +78,23 @@ describe('MainContentPanel', () => {
       expect(jestAxeResults).toHaveNoViolations();
     });
   });
+
+  describe('Transferred props and rendering - Component with yellow background', () => {
+    let jestAxeResults;
+
+    beforeAll(async () => {
+      const html = TestDev.mountHtmlTemplate(
+        <React.Fragment>
+          <MainContentPanel title="Test Title" colour="yellow">
+            This is a test.
+          </MainContentPanel>
+        </React.Fragment>
+      );
+      jestAxeResults = await AccessibilityDev.runJestAxe(html);
+    }, testTimeout);
+
+    it('verifies the jest-axe accessibility standards for the component', () => {
+      expect(jestAxeResults).toHaveNoViolations();
+    });
+  });
 });

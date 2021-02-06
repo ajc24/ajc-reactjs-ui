@@ -31,6 +31,10 @@ describe('MainContentPanel', () => {
     it('verifies that the "ajc-main-content-container" class is assigned to the root menu element', () => {
       expect(wrapper.find('div').at(0).hasClass('ajc-main-content-container')).toBeTruthy();
     });
+
+    it('verifies that the "ajc-text-black" class is assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-text-black')).toBeTruthy();
+    });
     
     it('verifies that the "ajc-default" class is assigned to the root menu element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-default')).toBeTruthy();
@@ -46,6 +50,10 @@ describe('MainContentPanel', () => {
 
     it('verifies that the "ajc-background-transparent" class is not assigned to the root menu element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-transparent')).toBeFalsy();
+    });
+
+    it('verifies that the "ajc-background-yellow" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-yellow')).toBeFalsy();
     });
 
     it('verifies that the "ajc-main-content-outer" class is assigned to the main content outer element', () => {
@@ -93,6 +101,10 @@ describe('MainContentPanel', () => {
     it('verifies that the "ajc-background-transparent" class is not assigned to the root menu element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-transparent')).toBeFalsy();
     });
+
+    it('verifies that the "ajc-background-yellow" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-yellow')).toBeFalsy();
+    });
   });
 
   describe('Transferred props and rendering - Component with transparent background', () => {
@@ -126,6 +138,48 @@ describe('MainContentPanel', () => {
 
     it('verifies that the "ajc-background-transparent" class is assigned to the root menu element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-transparent')).toBeTruthy();
+    });
+
+    it('verifies that the "ajc-background-yellow" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-yellow')).toBeFalsy();
+    });
+  });
+
+  describe('Transferred props and rendering - Component with yellow background', () => {
+    let componentDidMountSpy;
+    let wrapper;
+
+    beforeAll(() => {
+      componentDidMountSpy = jest
+        .spyOn(MainContentPanel.prototype, 'componentDidMount')
+        .mockImplementation(() => {});
+      wrapper = TestDev.mount(
+        <React.Fragment>
+          <MainContentPanel title="Test Title" colour="yellow">
+            This is a test.
+          </MainContentPanel>
+        </React.Fragment>
+      );
+    });
+
+    afterAll(() => {
+      componentDidMountSpy.mockRestore();
+    });
+    
+    it('verifies that the "ajc-background-grey-1" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-grey-1')).toBeFalsy();
+    });
+
+    it('verifies that the "ajc-background-white" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-white')).toBeFalsy();
+    });
+
+    it('verifies that the "ajc-background-transparent" class is not assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-transparent')).toBeFalsy();
+    });
+
+    it('verifies that the "ajc-background-yellow" class is assigned to the root menu element', () => {
+      expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-yellow')).toBeTruthy();
     });
   });
 
