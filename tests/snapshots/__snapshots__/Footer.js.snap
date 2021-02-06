@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Default props and rendering - Component with grey background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-footer-container ajc-text-white ajc-default ajc-background-grey-2"
+  role="contentinfo"
+>
+  <div
+    className="ajc-footer-content-outer"
+  >
+    <div
+      className="ajc-footer-content-inner"
+    >
+      This is a test.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Footer Transferred props and rendering - Component with red background verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-footer-container ajc-text-white ajc-default ajc-background-red"
+  role="contentinfo"
+>
+  <div
+    className="ajc-footer-content-outer"
+  >
+    <div
+      className="ajc-footer-content-inner"
+    >
+      This is a test.
+    </div>
+  </div>
+</div>
+`;
