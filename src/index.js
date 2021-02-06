@@ -1,3 +1,4 @@
+export { default as Footer } from './ui-elements/Footer';
 export { default as Header } from './ui-elements/Header';
 export { default as HeaderLogo } from './ui-elements/HeaderLogo';
 export { default as HeaderTitleAndSubtitle } from './ui-elements/HeaderTitleAndSubtitle';
