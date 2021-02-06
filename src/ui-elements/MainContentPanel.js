@@ -22,11 +22,13 @@ class MainContentPanel extends React.Component {
   }
 
   render() {
-    let containerStyling = 'ajc-main-content-container ajc-default';
+    let containerStyling = 'ajc-main-content-container ajc-text-black ajc-default';
     if (this.props.colour === 'grey') {
       containerStyling += ' ajc-background-grey-1';
     } else if (this.props.colour === 'white') {
       containerStyling += ' ajc-background-white';
+    } else if (this.props.colour === 'yellow') {
+      containerStyling += ' ajc-background-yellow';
     } else {
       containerStyling += ' ajc-background-transparent';
     }
@@ -45,7 +47,7 @@ MainContentPanel.propTypes = {
   /** The children components to be displayed within the web page */
   children: PropTypes.node.isRequired,
   /** The background colour for the webpage */
-  colour: PropTypes.oneOf([ 'grey', 'white', 'transparent' ]),
+  colour: PropTypes.oneOf([ 'grey', 'white', 'transparent', 'yellow' ]),
   /** The title for the webpage being displayed. This affects the title text displayed in your browser tab */
   title: PropTypes.string.isRequired,
 };
