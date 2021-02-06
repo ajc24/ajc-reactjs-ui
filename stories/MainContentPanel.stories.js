@@ -27,8 +27,17 @@ const GreyTemplate = () => {
 const TransparentTemplate = () => {
 	return <React.Fragment>
     <MainContentPanel title="Transparent Main Content Panel" colour="transparent">
-      <p>The main content panel is designed to act as a container for the main content for each individual page of your web application. This is an example of a main content panel with a
-        transparent background.</p>
+      <p>The main content panel is designed to act as a container for the main content for each individual page of your web application. This is an example of a main content panel
+        with a transparent background.</p>
+    </MainContentPanel>
+  </React.Fragment>;
+}
+
+const YellowTemplate = () => {
+	return <React.Fragment>
+    <MainContentPanel title="Transparent Main Content Panel" colour="yellow">
+      <p>The main content panel is designed to act as a container for the main content for each individual page of your web application. This is an example of a main content panel
+        with a yellow background.</p>
     </MainContentPanel>
   </React.Fragment>;
 }
@@ -38,4 +47,14 @@ Default.args = {
   title: 'Default Main Content Panel'
 };
 export const WithGreyBackground = GreyTemplate.bind({});
+WithGreyBackground.args = {
+  title: 'Grey Main Content Panel'
+};
 export const withTransparentBackground = TransparentTemplate.bind({});
+withTransparentBackground.args = {
+  title: 'Transparent Main Content Panel'
+};
+export const withYellowBackground = YellowTemplate.bind({});
+withYellowBackground.args = {
+  title: 'Yellow Main Content Panel'
+};
