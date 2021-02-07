@@ -50,6 +50,28 @@ describe('HeaderLogo', () => {
     });
   });
 
+  describe('disableMouseDownEvent() functionality', () => {
+    let mockEventPreventDefault;
+    let wrapper;
+
+    beforeAll(() => {
+      mockEventPreventDefault = jest.fn();
+      wrapper = TestDev.mount(
+        <div role="banner">
+          <HeaderLogo id="test-logo-id" imageSrc={testImage} />
+        </div>
+      );
+      /* Invoke the method being tested */
+      wrapper.find('img').prop('onMouseDown')({
+        preventDefault: mockEventPreventDefault,
+      });
+    });
+
+    it('verifies that the mouse down event is disabled', () => {
+      expect(mockEventPreventDefault.mock.calls).toHaveLength(1);
+    });
+  });
+
   describe('setImageLoaded() functionality', () => {
     let mockImage;
     let wrapper;
