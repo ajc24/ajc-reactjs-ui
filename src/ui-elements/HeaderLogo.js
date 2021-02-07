@@ -11,7 +11,16 @@ import '../styling/ui-styles.css';
 class HeaderLogo extends React.Component {
   constructor(props) {
     super(props);
+    this.disableMouseDownEvent = this.disableMouseDownEvent.bind(this);
     this.setImageLoaded = this.setImageLoaded.bind(this);
+  }
+
+  /**
+   * Disables the mouse down event for the image
+   * @param {Event} event 
+   */
+  disableMouseDownEvent(event) {
+    event.preventDefault();
   }
 
   /**
@@ -26,7 +35,7 @@ class HeaderLogo extends React.Component {
     const imageStyling = 'ajc-header-logo';
     return (
       <React.Fragment>
-        <img id={this.props.id} className={imageStyling} src={this.props.imageSrc} role="presentation" onLoad={this.setImageLoaded} />
+        <img id={this.props.id} className={imageStyling} src={this.props.imageSrc} role="presentation" onLoad={this.setImageLoaded} onMouseDown={this.disableMouseDownEvent} />
       </React.Fragment>
     );
   }
