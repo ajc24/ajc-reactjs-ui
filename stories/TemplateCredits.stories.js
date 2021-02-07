@@ -5,6 +5,7 @@ import {
   Header,
   HeaderLogo,
   HeaderTitleAndSubtitle,
+  MainContentHeading,
   MainContentPanel,
   Menu
 } from '../src';
@@ -28,10 +29,10 @@ const CreditsTemplate = () => {
       <Menu id="ajc-menu-id" menuItemsList={siteMenuItemsListTemplate} colour="red" />
     </BrowserRouter>
     <MainContentPanel title="Credits" colour="grey">
-      <p>Test text</p>
+      <MainContentHeading pageHeading="Credits" />
     </MainContentPanel>
     <Footer colour="red">
-      Footer text goes here.
+      Work in progress application being developed and tested by Anthony Cox in 2021
     </Footer>
 	</React.Fragment>;
 }

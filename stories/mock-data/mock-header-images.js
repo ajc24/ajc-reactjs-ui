@@ -37,8 +37,8 @@ import restOfYearImage10 from '../images/rest-of-year/rest-of-year-10.png';
 /* Set the header depending on the current date */
 let headerBackgroundImage;
 const todaysDate = new Date();
-const date = 8// todaysDate.getDate();
-const month = 10// todaysDate.getMonth() + 1;
+const date = todaysDate.getDate();
+const month = todaysDate.getMonth() + 1;
 if (month === 1) {
   /* Set the images for January */
   if (date >= 1 && date <= 3) {
