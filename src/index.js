@@ -2,6 +2,7 @@ export { default as Footer } from './ui-elements/Footer';
 export { default as Header } from './ui-elements/Header';
 export { default as HeaderLogo } from './ui-elements/HeaderLogo';
 export { default as HeaderTitleAndSubtitle } from './ui-elements/HeaderTitleAndSubtitle';
+export { default as MainContentHeading } from './ui-elements/MainContentHeading';
 export { default as MainContentPanel } from './ui-elements/MainContentPanel';
 export { default as Menu } from './ui-elements/Menu';
 export { default as SmallMenuIcon } from './ui-elements/SmallMenuIcon';
