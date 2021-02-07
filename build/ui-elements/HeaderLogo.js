@@ -22,7 +22,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 class HeaderLogo extends _react.default.Component {
   constructor(props) {
     super(props);
+    this.disableMouseDownEvent = this.disableMouseDownEvent.bind(this);
     this.setImageLoaded = this.setImageLoaded.bind(this);
+  }
+  /**
+   * Disables the mouse down event for the image
+   * @param {Event} event 
+   */
+
+
+  disableMouseDownEvent(event) {
+    event.preventDefault();
   }
   /**
    * Sets the image as loaded and transitions it into the UI
@@ -41,7 +51,8 @@ class HeaderLogo extends _react.default.Component {
       className: imageStyling,
       src: this.props.imageSrc,
       role: "presentation",
-      onLoad: this.setImageLoaded
+      onLoad: this.setImageLoaded,
+      onMouseDown: this.disableMouseDownEvent
     }));
   }
 

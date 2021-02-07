@@ -105,8 +105,10 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  max-width: 1329px;
+  max-width: 1349px;
   min-width: 683px;
+  user-select: none;
+  font-weight: 525;
 }
 
 .ajc-footer-content-outer {
@@ -157,7 +159,7 @@
   padding-left: 10px;
   padding-right: 10px;
   width: 1329px;
-  max-width: 1329px;
+  max-width: 1349px;
   min-width: 683px;
 }
 
@@ -270,6 +272,7 @@
   padding: 0;
   font-size: 50px;
   cursor: default;
+  user-select: none;
 }
 
 .ajc-header-title-subtitle-heading-two {
@@ -277,6 +280,7 @@
   padding: 0;
   font-size: 25px;
   cursor: default;
+  user-select: none;
 }
 
 .ajc-header-title-subtitle-top {
@@ -300,13 +304,56 @@
   min-width: 703px;
 }
 
+.ajc-main-content-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 25px;
+  width: 100%;
+  max-width: 1349px;
+  min-width: 683px;
+  user-select: none;
+}
+
+.ajc-main-content-heading-divider-inner {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 19px;
+  min-height: 19px;
+  max-height: 19px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ajc-main-content-heading-divider-outer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ajc-main-content-heading-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-weight: 750;
+}
+
 .ajc-main-content-inner {
   display: flex;
   flex-direction: column;
   height: auto;
   width: 100%;
-  max-width: 1329px;
-  min-width: 683px;
+  max-width: 1349px;
+  min-width: 703px;
 }
 
 .ajc-main-content-outer {
@@ -335,8 +382,12 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  max-width: 1329px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 1349px;
   min-width: 683px;
+  font-weight: 525;
 }
 
 .ajc-menu-bar-content-outer {
@@ -344,8 +395,6 @@
   justify-content: center;
   flex-direction: row;
   width: auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -380,7 +429,7 @@
 }
 
 .ajc-menu-bar-item-red:hover {
-  background: #D32506;
+  background: #D35A44;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -393,6 +442,7 @@
   margin-bottom: 0px;
   margin-left: 7.5px;
   margin-right: 7.5px;
+  user-select: none;
 }
 
 .ajc-small-menu-icon-container {
