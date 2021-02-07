@@ -7,12 +7,12 @@ export default {
 };
   
 const Template = args => {
-	return <React.Fragment>
+	return <div role="region">
     <MainContentHeading {...args} />
-  </React.Fragment>
+  </div>
 }
 
 export const Default = Template.bind({});
 Default.args = {
-  pageHeading: 'Sample Panel Heading'
+  pageHeading: 'Sample Page Heading'
 };
