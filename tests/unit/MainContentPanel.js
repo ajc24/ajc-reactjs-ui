@@ -166,19 +166,19 @@ describe('MainContentPanel', () => {
       componentDidMountSpy.mockRestore();
     });
     
-    it('verifies that the "ajc-background-grey-1" class is not assigned to the root menu element', () => {
+    it('verifies that the "ajc-background-grey-1" class is not assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-grey-1')).toBeFalsy();
     });
 
-    it('verifies that the "ajc-background-white" class is not assigned to the root menu element', () => {
+    it('verifies that the "ajc-background-white" class is not assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-white')).toBeFalsy();
     });
 
-    it('verifies that the "ajc-background-transparent" class is not assigned to the root menu element', () => {
+    it('verifies that the "ajc-background-transparent" class is not assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-transparent')).toBeFalsy();
     });
 
-    it('verifies that the "ajc-background-yellow" class is assigned to the root menu element', () => {
+    it('verifies that the "ajc-background-yellow" class is assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-container').hasClass('ajc-background-yellow')).toBeTruthy();
     });
   });

@@ -14,15 +14,15 @@ describe('MainContentPageTitle', () => {
       );
     });
 
-    it('verifies that the "ajc-main-content-heading-container" class is assigned to the root menu element', () => {
+    it('verifies that the "ajc-main-content-heading-container" class is assigned to the root element', () => {
       expect(wrapper.find('div').at(0).hasClass('ajc-main-content-heading-container')).toBeTruthy();
     });
 
-    it('verifies that the "ajc-text-black" class is assigned to the root menu element', () => {
+    it('verifies that the "ajc-text-black" class is assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-heading-container').hasClass('ajc-text-black')).toBeTruthy();
     });
     
-    it('verifies that the "ajc-default" class is assigned to the root menu element', () => {
+    it('verifies that the "ajc-default" class is assigned to the root element', () => {
       expect(wrapper.find('div.ajc-main-content-heading-container').hasClass('ajc-default')).toBeTruthy();
     });
 
