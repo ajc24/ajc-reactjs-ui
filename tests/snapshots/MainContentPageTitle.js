@@ -1,15 +1,15 @@
 import React from 'react';
 import { TestDev } from 'ajc-jest-enzyme';
-import { MainContentHeading } from '../../src';
+import { MainContentPageTitle } from '../../src';
 
-describe('MainContentHeading', () => {
+describe('MainContentPageTitle', () => {
   describe('Default props and rendering', () => {
     let jsonSnapshot;
 
     beforeAll(() => {
       jsonSnapshot = TestDev.createSnapshot(
         <React.Fragment>
-          <MainContentHeading pageHeading="Test Page Heading" />
+          <MainContentPageTitle titleText="Test Page Title Text" />
         </React.Fragment>
       );
     });
