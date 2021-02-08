@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainContentText Default props and rendering - Paragraph component verifies the snapshot for the component 1`] = `
+<p
+  className="ajc-text-paragraph-container ajc-text-black ajc-default"
+>
+  Test paragraph text.
+</p>
+`;
+
+exports[`MainContentText Transferred props and rendering - Heading component with upper spacing verifies the snapshot for the component 1`] = `
+<p
+  className="ajc-text-paragraph-container ajc-text-black ajc-default ajc-text-paragraph-upper-spacing"
+>
+  <b
+    className="ajc-text-paragraph-heading"
+  >
+    Test heading text
+  </b>
+</p>
+`;
+
+exports[`MainContentText Transferred props and rendering - Hyperlink component verifies the snapshot for the component 1`] = `
+<p
+  className="ajc-text-paragraph-container ajc-text-black ajc-default"
+>
+  <a
+    className="ajc-hyperlink"
+    href="http://www.test.com"
+  >
+    Test hyperlink
+  </a>
+</p>
+`;
+
+exports[`MainContentText Transferred props and rendering - Paragraph in italics component verifies the snapshot for the component 1`] = `
+<p
+  className="ajc-text-paragraph-container ajc-text-black ajc-default"
+>
+  <i>
+    Test paragraph in italics text.
+  </i>
+</p>
+`;
