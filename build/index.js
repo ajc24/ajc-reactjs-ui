@@ -27,16 +27,22 @@ Object.defineProperty(exports, "HeaderTitleAndSubtitle", {
     return _HeaderTitleAndSubtitle.default;
   }
 });
-Object.defineProperty(exports, "MainContentHeading", {
+Object.defineProperty(exports, "MainContentPageTitle", {
   enumerable: true,
   get: function () {
-    return _MainContentHeading.default;
+    return _MainContentPageTitle.default;
   }
 });
 Object.defineProperty(exports, "MainContentPanel", {
   enumerable: true,
   get: function () {
     return _MainContentPanel.default;
+  }
+});
+Object.defineProperty(exports, "MainContentText", {
+  enumerable: true,
+  get: function () {
+    return _MainContentText.default;
   }
 });
 Object.defineProperty(exports, "Menu", {
@@ -66,9 +72,11 @@ var _HeaderLogo = _interopRequireDefault(require("./ui-elements/HeaderLogo"));
 
 var _HeaderTitleAndSubtitle = _interopRequireDefault(require("./ui-elements/HeaderTitleAndSubtitle"));
 
-var _MainContentHeading = _interopRequireDefault(require("./ui-elements/MainContentHeading"));
+var _MainContentPageTitle = _interopRequireDefault(require("./ui-elements/MainContentPageTitle"));
 
 var _MainContentPanel = _interopRequireDefault(require("./ui-elements/MainContentPanel"));
+
+var _MainContentText = _interopRequireDefault(require("./ui-elements/MainContentText"));
 
 var _Menu = _interopRequireDefault(require("./ui-elements/Menu"));
 
