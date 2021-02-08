@@ -5,8 +5,9 @@ import {
   Header,
   HeaderLogo,
   HeaderTitleAndSubtitle,
-  MainContentHeading,
+  MainContentPageTitle,
   MainContentPanel,
+  MainContentText,
   Menu
 } from '../src';
 import {
@@ -29,10 +30,28 @@ const CreditsTemplate = () => {
       <Menu id="ajc-menu-id" menuItemsList={siteMenuItemsListTemplate} colour="red" />
     </BrowserRouter>
     <MainContentPanel title="Credits" colour="grey">
-      <MainContentHeading pageHeading="Credits" />
+      <MainContentPageTitle titleText="Credits" />
+      <MainContentText>
+        Test standard paragraph text
+      </MainContentText>
+      <MainContentText>
+        Second paragraph to test the spacing between paragraph elements.
+      </MainContentText>
+      <MainContentText type="paragraph-italics">
+        This paragraph will appear in italics. Useful for quotes or references etc.
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://www.google.ie">
+        https://www.google.ie
+      </MainContentText>
+      <MainContentText addUpperSpacing={true} type="heading">
+        Sample paragraph heading which also adds upper spacing to separate it from the above paragraph.
+      </MainContentText>
+      <MainContentText>
+        Another test paragraph to verify the spacing between a heading and a paragraph.
+      </MainContentText>
     </MainContentPanel>
     <Footer colour="red">
-      Work in progress application being developed and tested by Anthony Cox in 2021
+      Work in progress application
     </Footer>
 	</React.Fragment>;
 }
