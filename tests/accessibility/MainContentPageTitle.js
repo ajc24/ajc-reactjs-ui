@@ -2,9 +2,9 @@ import React from 'react';
 import { toHaveNoViolations } from 'jest-axe';
 import { AccessibilityDev } from 'ajc-accessibility';
 import { TestDev } from 'ajc-jest-enzyme';
-import { MainContentHeading } from '../../src';
+import { MainContentPageTitle } from '../../src';
 
-describe('MainContentHeading', () => {
+describe('MainContentPageTitle', () => {
   const testTimeout = AccessibilityDev.getMaximumTimeout();
 
   /* Extend the expect behaviour of jest */
@@ -16,7 +16,7 @@ describe('MainContentHeading', () => {
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
         <div role="region">
-          <MainContentHeading pageHeading="Test Page Title" />
+          <MainContentPageTitle titleText="Test Page Title Text" />
         </div>
       );
       jestAxeResults = await AccessibilityDev.runJestAxe(html);
