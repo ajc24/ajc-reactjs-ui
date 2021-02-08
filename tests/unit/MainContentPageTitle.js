@@ -1,15 +1,15 @@
 import React from 'react';
 import { TestDev } from 'ajc-jest-enzyme';
-import { MainContentHeading } from '../../src';
+import { MainContentPageTitle } from '../../src';
 
-describe('MainContentHeading', () => {
+describe('MainContentPageTitle', () => {
   describe('Default props and rendering', () => {
     let wrapper;
 
     beforeAll(() => {
       wrapper = TestDev.mount(
         <React.Fragment>
-          <MainContentHeading pageHeading="Test Page Heading" />
+          <MainContentPageTitle titleText="Test Page Heading" />
         </React.Fragment>
       );
     });
@@ -30,7 +30,7 @@ describe('MainContentHeading', () => {
 			expect(wrapper.find('div.ajc-main-content-heading-container h1').hasClass('ajc-main-content-heading-text')).toBeTruthy();
 		});
 
-    it('verifies that the page heading text content property is set correctly', () => {
+    it('verifies that the title text content property is set correctly', () => {
 			expect(wrapper.find('h1.ajc-main-content-heading-text').text()).toBe('Test Page Heading');
 		});
 
