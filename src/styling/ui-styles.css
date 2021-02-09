@@ -451,6 +451,34 @@
   user-select: none;
 }
 
+.ajc-screenshot-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  max-width: 1349px;
+  min-width: 683px;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.ajc-screenshot-image {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1329px;
+  min-width: 683px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
 .ajc-small-menu-icon-container {
   display: flex;
   flex-direction: column;
@@ -495,7 +523,7 @@
   padding-right: 20px;
   padding-bottom: 15px;
   max-width: 1349px;
-  min-width: 683px;
+  min-width: 663px;
   word-wrap: break-word;
 }
 

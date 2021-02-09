@@ -6,5 +6,6 @@ export { default as MainContentPageTitle } from './ui-elements/MainContentPageTi
 export { default as MainContentPanel } from './ui-elements/MainContentPanel';
 export { default as MainContentText } from './ui-elements/MainContentText';
 export { default as Menu } from './ui-elements/Menu';
+export { default as Screenshot } from './ui-elements/Screenshot';
 export { default as SmallMenuIcon } from './ui-elements/SmallMenuIcon';
 export { default as SmallRightArrowIcon } from './ui-elements/SmallRightArrowIcon';
