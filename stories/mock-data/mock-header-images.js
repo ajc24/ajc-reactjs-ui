@@ -34,6 +34,60 @@ import restOfYearImage8 from '../images/rest-of-year/rest-of-year-8.png';
 import restOfYearImage9 from '../images/rest-of-year/rest-of-year-9.png';
 import restOfYearImage10 from '../images/rest-of-year/rest-of-year-10.png';
 
+/* Build the list of images for the header */
+const headerAutumnImages = [
+  autumnImage1,
+  autumnImage2,
+  autumnImage3,
+];
+const headerChristmasImages = [
+  christmasImage1,
+  christmasImage2,
+  christmasImage3,
+  christmasImage4,
+  christmasImage5,
+];
+const headerHalloweenImages = [
+  halloweenImage1,
+  halloweenImage2,
+  halloweenImage3,
+];
+const headerNewYearImages = [
+  newYearImage1,
+  newYearImage2,
+  newYearImage3,
+];
+const headerRestOfYearImages = [
+  restOfYearImage1,
+  restOfYearImage2,
+  restOfYearImage3,
+  restOfYearImage4,
+  restOfYearImage5,
+  restOfYearImage6,
+  restOfYearImage7,
+  restOfYearImage8,
+  restOfYearImage9,
+  restOfYearImage10,
+];
+const headerSpringImages = [
+  springImage1,
+  springImage2,
+  springImage3,
+];
+const headerSummerImages = [
+  summerImage1,
+  summerImage2,
+  summerImage3,
+];
+const headerValentinesImages = [
+  valentinesImage1,
+];
+const headerWinterImages = [
+  winterImage1,
+  winterImage2,
+  winterImage3,
+];
+
 /* Set the header depending on the current date */
 let headerBackgroundImage;
 const todaysDate = new Date();
@@ -42,103 +96,113 @@ const month = todaysDate.getMonth() + 1;
 if (month === 1) {
   /* Set the images for January */
   if (date >= 1 && date <= 3) {
-    headerBackgroundImage = newYearImage1;
+    headerBackgroundImage = headerNewYearImages[0];
   } else if (date >= 4 && date <= 5) {
-    headerBackgroundImage = newYearImage2;
+    headerBackgroundImage = headerNewYearImages[1];
   } else if (date >= 6 && date <= 7) {
-    headerBackgroundImage = newYearImage3;
+    headerBackgroundImage = headerNewYearImages[2];
   } else {
-    headerBackgroundImage = restOfYearImage3;
+    headerBackgroundImage = headerRestOfYearImages[2];
   }
 } else if (month === 2) {
   /* Set the images for February */
   if (date >= 1 && date <= 3) {
-    headerBackgroundImage = springImage1;
+    headerBackgroundImage = headerSpringImages[0];
   } else if (date >= 4 && date <= 5) {
-    headerBackgroundImage = springImage2;
+    headerBackgroundImage = headerSpringImages[1];
   } else if (date >= 6 && date <= 7) {
-    headerBackgroundImage = springImage3;
+    headerBackgroundImage = headerSpringImages[2];
   } else if (date === 14) {
-    headerBackgroundImage = valentinesImage1;
+    headerBackgroundImage = headerValentinesImages[0];
   } else {
-    headerBackgroundImage = restOfYearImage8;
+    headerBackgroundImage = headerRestOfYearImages[7];
   }
 } else if (month === 3) {
   /* Set the images for March */
-  headerBackgroundImage = restOfYearImage1;
+  headerBackgroundImage = headerRestOfYearImages[0];
 } else if (month === 4) {
   /* Set the images for April */
-  headerBackgroundImage = restOfYearImage2;
+  headerBackgroundImage = headerRestOfYearImages[1];
 } else if (month === 5) {
   /* Set the images for May */
   if (date >= 1 && date <= 3) {
-    headerBackgroundImage = summerImage1;
+    headerBackgroundImage = headerSummerImages[0];
   } else if (date >= 4 && date <= 5) {
-    headerBackgroundImage = summerImage2;
+    headerBackgroundImage = headerSummerImages[1];
   } else if (date >= 6 && date <= 7) {
-    headerBackgroundImage = summerImage3;
+    headerBackgroundImage = headerSummerImages[2];
   } else {
-    headerBackgroundImage = restOfYearImage9;
+    headerBackgroundImage = headerRestOfYearImages[8];
   }
 } else if (month === 6) {
   /* Set the images for June */
-  headerBackgroundImage = restOfYearImage10;
+  headerBackgroundImage = headerRestOfYearImages[9];
 } else if (month === 7) {
   /* Set the images for July */
-  headerBackgroundImage = restOfYearImage7;
+  headerBackgroundImage = headerRestOfYearImages[6];
 } else if (month === 8) {
   /* Set the images for August */
   if (date >= 1 && date <= 3) {
-    headerBackgroundImage = autumnImage1;
+    headerBackgroundImage = headerAutumnImages[0];
   } else if (date >= 4 && date <= 5) {
-    headerBackgroundImage = autumnImage2;
+    headerBackgroundImage = headerAutumnImages[1];
   } else if (date >= 6 && date <= 7) {
-    headerBackgroundImage = autumnImage3;
+    headerBackgroundImage = headerAutumnImages[2];
   } else {
-    headerBackgroundImage = restOfYearImage6;
+    headerBackgroundImage = headerRestOfYearImages[5];
   }
 } else if (month === 9) {
   /* Set the images for September */
-  headerBackgroundImage = restOfYearImage5;
+  headerBackgroundImage = headerRestOfYearImages[4];
 } else if (month === 10) {
   /* Set the images for October */
   if (date >= 25 && date <= 27) {
-    headerBackgroundImage = halloweenImage1;
+    headerBackgroundImage = headerHalloweenImages[0];
   } else if (date >= 28 && date <= 29) {
-    headerBackgroundImage = halloweenImage2;
+    headerBackgroundImage = headerHalloweenImages[1];
   } else if (date >= 30 && date <= 31) {
-    headerBackgroundImage = halloweenImage3;
+    headerBackgroundImage = headerHalloweenImages[2];
   } else {
-    headerBackgroundImage = restOfYearImage4;
+    headerBackgroundImage = headerRestOfYearImages[3];
   }
 } else if (month === 11) {
   /* Set the images for November */
   if (date >= 1 && date <= 3) {
-    headerBackgroundImage = winterImage1;
+    headerBackgroundImage = headerWinterImages[0];
   } else if (date >= 4 && date <= 5) {
-    headerBackgroundImage = winterImage2;
+    headerBackgroundImage = headerWinterImages[1];
   } else if (date >= 6 && date <= 7) {
-    headerBackgroundImage = winterImage3;
+    headerBackgroundImage = headerWinterImages[2];
   } else {
-    headerBackgroundImage = restOfYearImage4;
+    headerBackgroundImage = headerRestOfYearImages[3];
   }
 } else {
   /* Set the images for December */
   if (date >= 18 && date <= 20) {
-    headerBackgroundImage = christmasImage1;
+    headerBackgroundImage = headerChristmasImages[0];
   } else if (date >= 21 && date <= 23) {
-    headerBackgroundImage = christmasImage2;
+    headerBackgroundImage = headerChristmasImages[1];
   } else if (date >= 24 && date <= 26) {
-    headerBackgroundImage = christmasImage3;
+    headerBackgroundImage = headerChristmasImages[2];
   } else if (date >= 27 && date <= 29) {
-    headerBackgroundImage = christmasImage4;
+    headerBackgroundImage = headerChristmasImages[3];
   } else if (date >= 30 && date <= 31) {
-    headerBackgroundImage = christmasImage5;
+    headerBackgroundImage = headerChristmasImages[4];
   } else {
-    headerBackgroundImage = restOfYearImage3;
+    headerBackgroundImage = headerRestOfYearImages[2];
   }
 }
+
 export {
+  headerAutumnImages,
   headerBackgroundImage,
-  headerLogoImage
+  headerChristmasImages,
+  headerHalloweenImages,
+  headerLogoImage,
+  headerNewYearImages,
+  headerRestOfYearImages,
+  headerSpringImages,
+  headerSummerImages,
+  headerValentinesImages,
+  headerWinterImages,
 };

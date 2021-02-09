@@ -12,7 +12,8 @@ import {
 } from '../src';
 import {
   headerBackgroundImage,
-  headerLogoImage
+  headerLogoImage,
+  headerNewYearImages,
 } from './mock-data/mock-header-images';
 import siteMenuItemsListTemplate from './mock-data/mock-menu';
 
@@ -32,22 +33,28 @@ const CreditsTemplate = () => {
     <MainContentPanel title="Credits" colour="grey">
       <MainContentPageTitle titleText="Credits" />
       <MainContentText>
-        Test standard paragraph text
+        This site uses a number of photos as part of the header all of which are taken from Unsplash, a site which hosts many freely usable images.
       </MainContentText>
       <MainContentText>
-        Second paragraph to test the spacing between paragraph elements.
+        The rules of using Unsplash images are quite simple: all photos on their site can be downloaded and used for free for both commercial and non-commercial purposes with no
+        permissions required. Unsplash does indicate that attribution to their images is appreciated and this is exactly what this page is all about.
+      </MainContentText>
+      <MainContentText>
+        The Unsplash license terms reads as follows:
       </MainContentText>
       <MainContentText type="paragraph-italics">
-        This paragraph will appear in italics. Useful for quotes or references etc.
+        "Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free,
+        including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from
+        Unsplash to replicate a similar or competing service."
       </MainContentText>
       <MainContentText type="hyperlink" href="https://www.google.ie">
-        https://www.google.ie
+        https://unsplash.com/license
       </MainContentText>
       <MainContentText addUpperSpacing={true} type="heading">
-        Sample paragraph heading which also adds upper spacing to separate it from the above paragraph.
+        New Years Day Celebration Images and Credits
       </MainContentText>
       <MainContentText>
-        Another test paragraph to verify the spacing between a heading and a paragraph.
+        The following images appear in the header of this site between the dates of the 1st January and 7th January inclusive of each new year:
       </MainContentText>
     </MainContentPanel>
     <Footer colour="red">
