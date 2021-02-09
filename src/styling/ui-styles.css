@@ -108,7 +108,7 @@
   max-width: 1349px;
   min-width: 683px;
   user-select: none;
-  font-weight: 525;
+  font-weight: 600;
 }
 
 .ajc-footer-content-outer {
@@ -314,7 +314,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 25px;
   width: 100%;
   max-width: 1349px;
   min-width: 683px;
@@ -366,8 +365,10 @@
   justify-content: center;
   flex-direction: row;
   width: auto;
+  padding-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
 }
 
 .ajc-menu-bar-container {
@@ -392,7 +393,7 @@
   width: 100%;
   max-width: 1349px;
   min-width: 683px;
-  font-weight: 525;
+  font-weight: 600;
 }
 
 .ajc-menu-bar-content-outer {
@@ -495,11 +496,12 @@
   padding-bottom: 15px;
   max-width: 1349px;
   min-width: 683px;
+  word-wrap: break-word;
 }
 
 .ajc-text-paragraph-heading {
   font-size: 20px;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 .ajc-text-paragraph-upper-spacing {
