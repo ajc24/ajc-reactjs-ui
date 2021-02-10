@@ -34,8 +34,10 @@ const CreditsTemplate = () => {
     <MainContentPanel title="Credits" colour="grey">
       <MainContentPageTitle titleText="Credits" />
       <MainContentText>
-        The header section of this site renders various photos depending on the current date. All of these photos have been taken from Unsplash, the internets source of freely
-        usable images:
+        The header section of this site renders various photos depending on the current date.
+      </MainContentText>
+      <MainContentText>
+        All of these photos have been taken from Unsplash, the internets source of freely usable images:
       </MainContentText>
       <MainContentText type="hyperlink" href="https://unsplash.com/">
         https://unsplash.com/
@@ -56,29 +58,107 @@ const CreditsTemplate = () => {
         https://unsplash.com/license
       </MainContentText>
       <MainContentText addUpperSpacing={true} type="heading">
-        Photo Authors
+        Unsplash Photo Authors
       </MainContentText>
       <MainContentText>
-        The following links will redirect you to all of the photo authors used via Unsplash images:
+        There are many photos which will appear on this site over the course of the year.
+      </MainContentText>
+      <MainContentText>
+        The following links will redirect you to all of the photo authors on Unsplash images:
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Aaron Burden
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@alex_dream?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Alejandro Mendoza
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@aniket940518?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Aniket Bhattacharya
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@bantersnaps?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Bantersnaps
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@vorosbenisop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Benjamin Voros
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@bielmorro?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Biel Morro
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@heycrisso?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Chris Galbraith
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@dakotaroosphotography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Dakota Roos
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@drosie?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Donnie Rosie
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@ewitsoe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Erik Witsoe
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@fedevitale?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Federico Vitale
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@florianolv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Florian Olivo
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@freestocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Freestocks
       </MainContentText>
       <MainContentText type="hyperlink" href="https://unsplash.com/@goian?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
         Ian Schneider
       </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@joannakosinska?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Joanna Kosinska
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@joelholland?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Joel Holland
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@theshuttervision?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Jonathan Cooper
+      </MainContentText>
       <MainContentText type="hyperlink" href="https://unsplash.com/@kylethacker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
         Kyle Thacker
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@makariostang?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Makarios Tang
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@maxandrey?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Max Andrey
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@mike?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Mike Kotsch
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Nathan Dumlao
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@nomadicjulien?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Nomadic Julien
       </MainContentText>
       <MainContentText type="hyperlink" href="https://unsplash.com/@acleanbake?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
         Nora Schlesinger
       </MainContentText>
-      <MainContentText addUpperSpacing={true} type="heading">
-        New Years Day Celebrations
+      <MainContentText type="hyperlink" href="https://unsplash.com/@osmanrana?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Osman Rana
       </MainContentText>
-      <MainContentText>
-        The following images appear in the header section between the dates of the 1st January and 7th January inclusive of each new year:
+      <MainContentText type="hyperlink" href="https://unsplash.com/@caarl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Reynier Carl
       </MainContentText>
-      <Screenshot id="new-year-screenshot-1" imageSrc={headerNewYearImages[0]} caption="Original photo by Kyle Thacker"/>
-      <Screenshot id="new-year-screenshot-2" imageSrc={headerNewYearImages[1]} caption="Original photo by Nora Schlesinger" />
-      <Screenshot id="new-year-screenshot-3" imageSrc={headerNewYearImages[2]} caption="Original photo by Ian Schneider" />
+      <MainContentText type="hyperlink" href="https://unsplash.com/@rohit_c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Rohit Choudhari
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@usualmorals?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Taylor R
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@theregisti?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        The Registi
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@tjholowaychuk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        TJ Holowaychuk
+      </MainContentText>
+      <MainContentText type="hyperlink" href="https://unsplash.com/@lnz_uk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+        Vagelis Lnz
+      </MainContentText>
     </MainContentPanel>
     <Footer colour="red">
       Work in progress application
