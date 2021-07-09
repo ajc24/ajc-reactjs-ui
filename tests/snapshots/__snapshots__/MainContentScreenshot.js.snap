@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLogo Default props and rendering - Image src as a string verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-screenshot-container ajc-text-black ajc-default"
+>
+  <div
+    className="ajc-screenshot-image-inner"
+  >
+    <img
+      className="ajc-screenshot-image"
+      id="test-screenshot-id"
+      onLoad={[Function]}
+      onMouseDown={[Function]}
+      role="presentation"
+      src="../../stories/images/storybook-test-screenshot.png"
+    />
+  </div>
+  <p
+    className="ajc-screenshot-caption"
+    id="test-screenshot-id-caption"
+  >
+    Test caption text content
+  </p>
+</div>
+`;
+
+exports[`HeaderLogo Default props and rendering - Image src as an import of image data verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-screenshot-container ajc-text-black ajc-default"
+>
+  <div
+    className="ajc-screenshot-image-inner"
+  >
+    <img
+      className="ajc-screenshot-image"
+      id="test-screenshot-id"
+      onLoad={[Function]}
+      onMouseDown={[Function]}
+      role="presentation"
+      src={Object {}}
+    />
+  </div>
+  <p
+    className="ajc-screenshot-caption"
+    id="test-screenshot-id-caption"
+  >
+    Test caption text content
+  </p>
+</div>
+`;
