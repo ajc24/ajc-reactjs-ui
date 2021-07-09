@@ -39,6 +39,12 @@ Object.defineProperty(exports, "MainContentPanel", {
     return _MainContentPanel.default;
   }
 });
+Object.defineProperty(exports, "MainContentScreenshot", {
+  enumerable: true,
+  get: function () {
+    return _MainContentScreenshot.default;
+  }
+});
 Object.defineProperty(exports, "MainContentText", {
   enumerable: true,
   get: function () {
@@ -75,6 +81,8 @@ var _HeaderTitleAndSubtitle = _interopRequireDefault(require("./ui-elements/Head
 var _MainContentPageTitle = _interopRequireDefault(require("./ui-elements/MainContentPageTitle"));
 
 var _MainContentPanel = _interopRequireDefault(require("./ui-elements/MainContentPanel"));
+
+var _MainContentScreenshot = _interopRequireDefault(require("./ui-elements/MainContentScreenshot"));
 
 var _MainContentText = _interopRequireDefault(require("./ui-elements/MainContentText"));
 
