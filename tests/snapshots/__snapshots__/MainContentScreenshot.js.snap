@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeaderLogo Default props and rendering - Image src as a string verifies the snapshot for the component 1`] = `
+exports[`Main Content Screenshot Default props and rendering - Image src as a string verifies the snapshot for the component 1`] = `
 <div
   className="ajc-screenshot-container ajc-text-black ajc-default"
 >
@@ -25,7 +25,7 @@ exports[`HeaderLogo Default props and rendering - Image src as a string verifies
 </div>
 `;
 
-exports[`HeaderLogo Default props and rendering - Image src as an import of image data verifies the snapshot for the component 1`] = `
+exports[`Main Content Screenshot Default props and rendering - Image src as an import of image data verifies the snapshot for the component 1`] = `
 <div
   className="ajc-screenshot-container ajc-text-black ajc-default"
 >
