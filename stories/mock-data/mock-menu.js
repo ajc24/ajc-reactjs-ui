@@ -1,7 +1,12 @@
 const siteMenuItemsListTemplate = [
   {
-    route: '#',
-    title: 'Credits',
-  }
+    title: 'About',
+    dropdownMenuItemsList: [
+      {
+        route: '#',
+        title: 'Credits',
+      }
+    ],
+  },
 ];
 export default siteMenuItemsListTemplate;
