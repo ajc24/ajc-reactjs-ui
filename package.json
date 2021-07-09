@@ -26,14 +26,14 @@
   "homepage": "https://github.com/ajc24/ajc-reactjs-ui#readme",
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.1.17",
-    "@storybook/addon-docs": "^6.1.17",
-    "@storybook/react": "^6.1.17",
+    "@storybook/addon-a11y": "^6.3.4",
+    "@storybook/addon-docs": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "ajc-accessibility": "github:ajc24/ajc-accessibility",
     "ajc-babel-config": "github:ajc24/ajc-babel-config",
     "ajc-jest-enzyme": "github:ajc24/ajc-jest-enzyme",
