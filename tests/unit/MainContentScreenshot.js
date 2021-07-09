@@ -4,7 +4,7 @@ import { TestDev } from 'ajc-jest-enzyme';
 import { MainContentScreenshot } from '../../src';
 import testImage from '../../stories/images/storybook-test-screenshot.png';
 
-describe('MainContentScreenshot', () => {
+describe('Main Content Screenshot', () => {
   const testImagePath = '../../stories/images/storybook-test-screenshot.png';
 
   describe('Default props and rendering - Image src as an import of image data', () => {
