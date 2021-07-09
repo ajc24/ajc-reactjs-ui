@@ -8,13 +8,11 @@ import {
   MainContentPageTitle,
   MainContentPanel,
   MainContentText,
-  Menu,
-  Screenshot
+  Menu
 } from '../src';
 import {
   headerBackgroundImage,
-  headerLogoImage,
-  headerNewYearImages,
+  headerLogoImage
 } from './mock-data/mock-header-images';
 import siteMenuItemsListTemplate from './mock-data/mock-menu';
 
