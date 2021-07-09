@@ -1,3 +1,4 @@
+import 'jsdom-global/register';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { TestDev } from 'ajc-jest-enzyme';

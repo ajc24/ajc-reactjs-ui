@@ -1,3 +1,4 @@
+import 'jsdom-global/register';
 import React from 'react';
 import { TestDev } from 'ajc-jest-enzyme';
 import { Footer } from '../../src';
@@ -15,7 +16,6 @@ describe('Footer', () => {
         </React.Fragment>
       );
     });
-    
     it('verifies the snapshot for the component', () => {
       expect(jsonSnapshot).toMatchSnapshot();
     });
@@ -33,7 +33,6 @@ describe('Footer', () => {
         </React.Fragment>
       );
     });
-
     it('verifies the snapshot for the component', () => {
       expect(jsonSnapshot).toMatchSnapshot();
     });
