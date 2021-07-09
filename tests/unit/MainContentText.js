@@ -1,3 +1,4 @@
+import 'jsdom-global/register';
 import React from 'react';
 import { TestDev } from 'ajc-jest-enzyme';
 import { MainContentText } from '../../src';
