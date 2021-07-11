@@ -1,3 +1,5 @@
+export { default as ButtonsList } from './ui-elements/ButtonsList';
+export { default as FileUploader } from './ui-elements/FileUploader';
 export { default as Footer } from './ui-elements/Footer';
 export { default as Header } from './ui-elements/Header';
 export { default as HeaderLogo } from './ui-elements/HeaderLogo';
