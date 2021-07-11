@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons List Default props and rendering - Single grey button verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-buttons-list-container ajc-buttons-list-container-left-align ajc-default"
+>
+  <button
+    className="ajc-button ajc-default ajc-button-grey"
+    id="test-single-button-id"
+    onClick={[MockFunction]}
+    type="button"
+  >
+    Test Default Single Grey Button
+  </button>
+</div>
+`;
+
+exports[`Buttons List Transferred props and rendering - Single right aligned grey submit button verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-buttons-list-container ajc-buttons-list-container-right-align ajc-default"
+>
+  <button
+    className="ajc-button ajc-default ajc-button-grey"
+    id="test-single-submit-button-id"
+    onClick={[MockFunction]}
+    type="submit"
+  >
+    Test Submit Button
+  </button>
+</div>
+`;
+
+exports[`Buttons List Transferred props and rendering - Two center aligned red buttons verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-buttons-list-container ajc-buttons-list-container-center-align ajc-default"
+>
+  <button
+    className="ajc-button ajc-default ajc-button-red ajc-button-right-spacing"
+    id="test-button-1-id"
+    onClick={[MockFunction]}
+    type="button"
+  >
+    Test Button 1
+  </button>
+  <button
+    className="ajc-button ajc-default ajc-button-red"
+    id="test-button-2-id"
+    onClick={[MockFunction]}
+    type="button"
+  >
+    Test Button 2
+  </button>
+</div>
+`;
