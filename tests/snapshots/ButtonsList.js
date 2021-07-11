@@ -10,7 +10,7 @@ describe('Buttons List', () => {
       onClick: jest.fn(),
       title: 'Test Default Single Grey Button',
       type: 'button',
-    },
+    }
   ];
   const singleSubmitButtonList = [
     {
@@ -18,7 +18,7 @@ describe('Buttons List', () => {
       onClick: jest.fn(),
       title: 'Test Submit Button',
       type: 'submit',
-    },
+    }
   ];
   const twoButtonsList = [
     {
@@ -32,7 +32,7 @@ describe('Buttons List', () => {
       onClick: jest.fn(),
       title: 'Test Button 2',
       type: 'button',
-    },
+    }
   ];
   describe('Default props and rendering - Single grey button', () => {
     let jsonSnapshot;
