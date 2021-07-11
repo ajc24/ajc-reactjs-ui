@@ -19,7 +19,7 @@ import obductionImage from './images/storybook-test-screenshot.png';
 import siteMenuItemsListTemplate from './mock-data/mock-menu';
 
 export default {
-	title: 'Page Templates/Website',
+	title: 'Testing/Web Page',
 };
 
 const ReviewArticleTemplate = () => {
