@@ -15,6 +15,14 @@ describe('Buttons List', () => {
       type: 'button',
     },
   ];
+  const singleSubmitButtonList = [
+    {
+      id: 'test-single-submit-button-id',
+      onClick: jest.fn(),
+      title: 'Test Submit Button',
+      type: 'submit',
+    },
+  ];
   const twoButtonsList = [
     {
       id: 'test-button-1-id',
@@ -232,13 +240,13 @@ describe('Buttons List', () => {
     });
   });
 
-  describe('Transferred props and rendering - Single right aligned grey button', () => {
+  describe('Transferred props and rendering - Single right aligned grey submit button', () => {
     let wrapper;
 
     beforeAll(() => {
       wrapper = TestDev.mount(
         <React.Fragment>
-          <ButtonsList colour="grey" alignment="right-align" buttonsList={singleButtonList} />
+          <ButtonsList colour="grey" alignment="right-align" buttonsList={singleSubmitButtonList} />
         </React.Fragment>
       );
     });
@@ -253,6 +261,10 @@ describe('Buttons List', () => {
 
     it('verifies that the "ajc-buttons-list-container-left-align" class is not assigned to the root element', () => {
       expect(wrapper.find('div.ajc-buttons-list-container').hasClass('ajc-buttons-list-container-left-align')).toBeFalsy();
+    });
+
+    it('verifies that the type attribute is set to the submit button element', () => {
+      expect(wrapper.find('button#test-single-submit-button-id').prop('type')).toBe('submit');
     });
   });
 });
