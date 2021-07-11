@@ -3,7 +3,7 @@ import { SmallMenuIcon } from '../src';
 
 export default {
 	component: SmallMenuIcon,
-	title: 'Components/SmallMenuIcon',
+	title: 'Icon Components/SmallMenuIcon',
 };
   
 const Template = args => {

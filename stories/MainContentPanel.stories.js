@@ -3,7 +3,7 @@ import { MainContentPanel } from '../src';
 
 export default {
 	component: MainContentPanel,
-	title: 'Components/MainContentPanel',
+	title: 'Page Content/MainContentPanel',
 };
 
 const DefaultTemplate = args => {

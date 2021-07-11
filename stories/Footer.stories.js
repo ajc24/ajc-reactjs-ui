@@ -3,7 +3,7 @@ import { Footer } from '../src';
 
 export default {
 	component: Footer,
-	title: 'Components/Footer',
+	title: 'Footer Section/Footer',
 };
 
 const Template = args => {

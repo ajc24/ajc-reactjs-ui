@@ -4,7 +4,7 @@ import { Menu } from '../src';
 
 export default {
 	component: Menu,
-	title: 'Components/Menu',
+	title: 'Menu Components/Menu',
 };
 
 const testMenuItemsList = [

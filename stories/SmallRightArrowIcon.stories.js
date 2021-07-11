@@ -3,7 +3,7 @@ import { SmallRightArrowIcon } from '../src';
 
 export default {
 	component: SmallRightArrowIcon,
-	title: 'Components/SmallRightArrowIcon',
+	title: 'Icon Components/SmallRightArrowIcon',
 };
   
 const Template = args => {

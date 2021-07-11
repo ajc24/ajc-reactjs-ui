@@ -3,7 +3,7 @@ import { HeaderTitleAndSubtitle } from '../src';
 
 export default {
 	component: HeaderTitleAndSubtitle,
-	title: 'Components/HeaderTitleAndSubtitle',
+	title: 'Header Section/HeaderTitleAndSubtitle',
 };
   
 const Template = args => {

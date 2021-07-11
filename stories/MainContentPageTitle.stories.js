@@ -3,7 +3,7 @@ import { MainContentPageTitle } from '../src';
 
 export default {
 	component: MainContentPageTitle,
-	title: 'Components/MainContentPageTitle',
+	title: 'Page Content/MainContentPageTitle',
 };
   
 const Template = args => {

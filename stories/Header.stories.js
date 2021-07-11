@@ -4,7 +4,7 @@ import testImage from './images/storybook-header-bg.png';
 
 export default {
 	component: Header,
-	title: 'Components/Header',
+	title: 'Header Section/Header',
 };
   
 const Template = args => {

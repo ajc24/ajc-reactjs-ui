@@ -4,7 +4,7 @@ import testImage from './images/storybook-test-screenshot.png';
 
 export default {
 	component: MainContentScreenshot,
-	title: 'Components/MainContentScreenshot',
+	title: 'Page Content/MainContentScreenshot',
 };
   
 const Template = args => {

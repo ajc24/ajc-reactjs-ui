@@ -4,7 +4,7 @@ import testImage from './images/storybook-header-logo.png';
 
 export default {
 	component: HeaderLogo,
-	title: 'Components/HeaderLogo',
+	title: 'Header Section/HeaderLogo',
 };
   
 const Template = args => {

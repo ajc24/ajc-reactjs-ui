@@ -3,7 +3,7 @@ import { MainContentText } from '../src';
 
 export default {
 	component: MainContentText,
-	title: 'Components/MainContentText',
+	title: 'Page Content/MainContentText',
 };
   
 const Template = args => {
