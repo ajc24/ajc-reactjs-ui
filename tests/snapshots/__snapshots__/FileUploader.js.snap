@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`File Uploader Default props and rendering verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-file-uploader-container ajc-default"
+>
+  <p
+    className="ajc-text-paragraph-container ajc-text-black ajc-default"
+  >
+    <b
+      className="ajc-text-paragraph-heading"
+    >
+      Upload a File:
+    </b>
+  </p>
+  <div
+    className="ajc-buttons-list-container ajc-buttons-list-container-left-align ajc-default"
+  >
+    <button
+      className="ajc-button ajc-default ajc-button-grey ajc-button-right-spacing"
+      id="default-file-uploader-id-choose-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Choose a file to upload
+    </button>
+    <button
+      className="ajc-button ajc-default ajc-button-grey"
+      id="default-file-uploader-id-clear-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Clear selection
+    </button>
+  </div>
+  <p
+    className="ajc-text-paragraph-container ajc-text-black ajc-default"
+  >
+    <i>
+      <span
+        id="default-file-uploader-id-file-status"
+      />
+    </i>
+  </p>
+  <input
+    className="ajc-file-uploader-input"
+    id="default-file-uploader-id-file"
+    name="default-file-uploader-id-file"
+    onChange={[Function]}
+    type="file"
+  />
+</div>
+`;
+
+exports[`File Uploader Transferred props and rendering - File upload with red buttons, custom title text and additional upper spacing verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-file-uploader-container ajc-default"
+>
+  <p
+    className="ajc-text-paragraph-container ajc-text-black ajc-default ajc-text-paragraph-upper-spacing"
+  >
+    <b
+      className="ajc-text-paragraph-heading"
+    >
+      Custom File Uploader Title:
+    </b>
+  </p>
+  <div
+    className="ajc-buttons-list-container ajc-buttons-list-container-left-align ajc-default"
+  >
+    <button
+      className="ajc-button ajc-default ajc-button-red ajc-button-right-spacing"
+      id="custom-file-uploader-id-choose-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Choose a file to upload
+    </button>
+    <button
+      className="ajc-button ajc-default ajc-button-red"
+      id="custom-file-uploader-id-clear-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Clear selection
+    </button>
+  </div>
+  <p
+    className="ajc-text-paragraph-container ajc-text-black ajc-default"
+  >
+    <i>
+      <span
+        id="custom-file-uploader-id-file-status"
+      />
+    </i>
+  </p>
+  <input
+    className="ajc-file-uploader-input"
+    id="custom-file-uploader-id-file"
+    name="custom-file-uploader-id-file"
+    onChange={[Function]}
+    type="file"
+  />
+</div>
+`;
