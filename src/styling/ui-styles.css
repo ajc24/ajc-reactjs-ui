@@ -164,6 +164,10 @@
   display: none;
 }
 
+.ajc-file-uploader-input-label {
+  display: none;
+}
+
 .ajc-footer-container {
   display: flex;
   justify-content: center;

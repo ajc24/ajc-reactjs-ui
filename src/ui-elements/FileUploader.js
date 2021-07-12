@@ -127,6 +127,7 @@ class FileUploader extends React.Component {
     /* Create the styling for the component */
     const containerStyling = 'ajc-file-uploader-container ajc-default';
     const fileInputStyling = 'ajc-file-uploader-input';
+    const fileInputLabelStyling = 'ajc-file-uploader-input-label';
     return (
       <div className={containerStyling}>
         <MainContentText type="heading" addUpperSpacing={this.props.addUpperSpacing}>
@@ -136,6 +137,7 @@ class FileUploader extends React.Component {
         <MainContentText type="paragraph-italics">
           <span id={`${this.props.id}-file-status`}></span>
         </MainContentText>
+        <label for={`${this.props.id}-file`} className={fileInputLabelStyling}>Hidden File Input:</label>
         <input id={`${this.props.id}-file`} name={`${this.props.id}-file`} type="file" className={fileInputStyling} onChange={this.handleChangeFileInput}></input>
       </div>
     );
