@@ -17,7 +17,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * The MainContentText component is a versatile component which can render a paragraph of text in a number of different ways.
  * 
  * - `paragraph` is the default type for this component. Text will appear cleanly and without any additional formatting. 
- * - Using the `heading` type property will render a paragraph heading. All text within the paragraph will appear in bold.
+ * - Using the `heading` type property will render a paragraph heading. All text within the heading will appear in bold.
  * - The `hyperlink` option will render all text within the paragraph as a hyperlink. You also must set the href property in order for a hyperlink to be displayed.
  * - Finally setting the `paragraph-italics` type property will render all text within the paragraph in italics.
  * 
@@ -73,9 +73,16 @@ class MainContentText extends _react.default.Component {
 }
 
 MainContentText.propTypes = {
+  /** Adds additional upper spacing of 30px to the paragraph / heading. By default this spacing is not added to the component. */
   addUpperSpacing: _propTypes.default.bool,
+
+  /** The child components to be rendered within the component. */
   children: _propTypes.default.node.isRequired,
+
+  /** In the event that this component is used to render a hyperlink, this property is set as the target url. */
   href: _propTypes.default.string,
+
+  /** The type of component to be rendered. By default a paragraph component is rendered. */
   type: _propTypes.default.oneOf(['heading', 'hyperlink', 'paragraph', 'paragraph-italics'])
 };
 MainContentText.defaultProps = {
