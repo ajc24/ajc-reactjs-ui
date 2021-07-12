@@ -56,7 +56,19 @@ describe('File Uploader', () => {
       expect(wrapper.find('span').prop('id')).toBe('default-file-uploader-id-file-status');
     });
 
-    it('verifies that the id property is correctly set to the file input element', () => {
+    it('verifies that the for attribute is correctly set to the label element', () => {
+      expect(wrapper.find('label').prop('for')).toBe('default-file-uploader-id-file');
+    });
+
+    it('verifies that the "ajc-file-uploader-input-label" class is assigned to the file input element', () => {
+      expect(wrapper.find('label').hasClass('ajc-file-uploader-input-label')).toBeTruthy();
+    });
+
+    it('verifies that the text content for the label element is set correctly', () => {
+      expect(wrapper.find('label').text()).toBe('Hidden File Input:');
+    });
+
+    it('verifies that the id attribute is correctly set to the file input element', () => {
       expect(wrapper.find('input').prop('id')).toBe('default-file-uploader-id-file');
     });
 
