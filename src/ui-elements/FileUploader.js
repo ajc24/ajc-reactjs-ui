@@ -20,13 +20,33 @@ import '../styling/ui-styles.css';
 class FileUploader extends React.Component {
   constructor(props) {
     super(props);
+    this.clickChooseButton = this.clickChooseButton.bind(this);
+    this.clickClearButton = this.clickClearButton.bind(this);
     this.handleChangeFileInput = this.handleChangeFileInput.bind(this);
-    this.resetFileStatus = this.resetFileStatus.bind(this);
-    this.setFileForUpload = this.setFileForUpload.bind(this);
+    this.handleChooseButton = this.handleChooseButton.bind(this);
+    this.handleFileInput = this.handleFileInput.bind(this);
+    this.setFileStatus = this.setFileStatus.bind(this);
   }
 
   componentDidMount() {
-    this.resetFileStatus();
+    this.clickClearButton();
+  }
+
+  /**
+   * Fires a click event on the file input field in order to allow
+   * a user to set a file to be uploaded
+   */
+   clickChooseButton() {
+    this.handleFileInput('click');
+  }
+
+  /**
+   * Resets the file input value and status to the user
+   */
+   clickClearButton() {
+    this.handleFileInput('clear');
+    this.setFileStatus(undefined);
+    this.handleChooseButton('enable');
   }
 
   /**
@@ -34,53 +54,72 @@ class FileUploader extends React.Component {
    * Sets the file status to that of the selected file where appropriate
    */
   handleChangeFileInput() {
-    const fileInput = document.getElementById(`${this.props.id}-file`);
-    if (fileInput.files.length > 0) {
-      const fileStatus = document.getElementById(`${this.props.id}-file-status`);
-      fileStatus.textContent = `Selected file: ${fileInput.files[0].name}`;
-      /* Disable the choose file button after successful upload */
-      const chooseFileButton = document.getElementById(`${this.props.id}-choose-button`);
+    if (this.handleFileInput('check-files-uploaded') === true) {
+      this.setFileStatus(this.handleFileInput('get-filename')); 
+      this.handleChooseButton('disable');
+    }
+  }
+
+  /**
+   * Enables or disables the components "Choose a file" button
+   * @param {'enable'|'disable'} action
+   */
+   handleChooseButton(action = 'enable') {
+    const chooseFileButton = document.getElementById(`${this.props.id}-choose-button`);
+    if (action === 'enable') {
+      chooseFileButton.disabled = false;
+      chooseFileButton.style.opacity = 1;
+    } else if (action === 'disable') {
       chooseFileButton.disabled = true;
       chooseFileButton.style.opacity = 0.25;
     }
   }
 
   /**
-   * Resets the file input value and status to the user
+   * Clicks on, clears the value from or checks the length of the files list
+   * in the file input element
+   * @param {'click'|'clear'|'check-files-uploaded'|'get-filename'} action 
+   * @returns {boolean|string|null}
    */
-  resetFileStatus() {
-    /* Clear the file input value */
+   handleFileInput(action = 'click') {
+    let returnValue = null;
     const fileInput = document.getElementById(`${this.props.id}-file`);
-    fileInput.value = '';
-    /* Reset the status for the user */
-    const fileStatus = document.getElementById(`${this.props.id}-file-status`);
-    fileStatus.textContent = 'You have not yet selected a file.';
-    /* Re-enable the choose file button after clearing the last file upload selection */
-    const chooseFileButton = document.getElementById(`${this.props.id}-choose-button`);
-    chooseFileButton.disabled = false;
-    chooseFileButton.style.opacity = 1;
+    if (action === 'click') {
+      fileInput.click();
+    } else if (action === 'check-files-uploaded') {
+      returnValue = fileInput.files.length > 0;
+    } else if (action === 'clear') {
+      fileInput.value = '';
+    } else if (action === 'get-filename') {
+      returnValue = fileInput.files[0].name;
+    }
+    return returnValue;
   }
 
   /**
-   * Fires a click event on the file input field in order to allow
-   * a user to set a file to be uploaded
+   * Sets the file status text content for the component
+   * @param {string} fileName 
    */
-  setFileForUpload() {
-    const fileInput = document.getElementById(`${this.props.id}-file`);
-    fileInput.click();
+  setFileStatus(fileName = undefined) {
+    const fileStatus = document.getElementById(`${this.props.id}-file-status`);
+    if (fileName !== undefined) {
+      fileStatus.textContent = `Selected file: ${fileName}`;
+    } else {
+      fileStatus.textContent = 'You have not yet selected a file.';
+    }
   }
 
   render() {
     const buttonsListData = [
       {
         id: `${this.props.id}-choose-button`,
-        onClick: this.setFileForUpload,
+        onClick: this.clickChooseButton,
         title: 'Choose a file to upload',
         type: 'button',
       },
       {
         id: `${this.props.id}-clear-button`,
-        onClick: this.resetFileStatus,
+        onClick: this.clickClearButton,
         title: 'Clear selection',
         type: 'button',
       }
