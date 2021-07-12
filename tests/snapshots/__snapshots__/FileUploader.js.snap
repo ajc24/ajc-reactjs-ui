@@ -42,6 +42,12 @@ exports[`File Uploader Default props and rendering verifies the snapshot for the
       />
     </i>
   </p>
+  <label
+    className="ajc-file-uploader-input-label"
+    for="default-file-uploader-id-file"
+  >
+    Hidden File Input:
+  </label>
   <input
     className="ajc-file-uploader-input"
     id="default-file-uploader-id-file"
@@ -94,6 +100,12 @@ exports[`File Uploader Transferred props and rendering - File upload with red bu
       />
     </i>
   </p>
+  <label
+    className="ajc-file-uploader-input-label"
+    for="custom-file-uploader-id-file"
+  >
+    Hidden File Input:
+  </label>
   <input
     className="ajc-file-uploader-input"
     id="custom-file-uploader-id-file"
