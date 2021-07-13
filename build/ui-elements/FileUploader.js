@@ -148,13 +148,18 @@ class FileUploader extends _react.default.Component {
 
     const containerStyling = 'ajc-file-uploader-container ajc-default';
     const fileInputStyling = 'ajc-file-uploader-input';
-    const fileInputLabelStyling = 'ajc-file-uploader-input-label';
+    let fileInputLabelStyling = 'ajc-file-uploader-input-label ajc-black-text ajc-default';
+
+    if (this.props.addUpperSpacing === true) {
+      fileInputLabelStyling += ' ajc-file-uploader-input-label-upper-spacing';
+    }
+
     return /*#__PURE__*/_react.default.createElement("div", {
       className: containerStyling
-    }, /*#__PURE__*/_react.default.createElement(_MainContentText.default, {
-      type: "heading",
-      addUpperSpacing: this.props.addUpperSpacing
-    }, this.props.titleTextContent), /*#__PURE__*/_react.default.createElement(_ButtonsList.default, {
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      htmlFor: `${this.props.id}-file`,
+      className: fileInputLabelStyling
+    }, this.props.labelText), /*#__PURE__*/_react.default.createElement(_ButtonsList.default, {
       alignment: "left-align",
       colour: this.props.colour,
       buttonsList: buttonsListData
@@ -162,10 +167,7 @@ class FileUploader extends _react.default.Component {
       type: "paragraph-italics"
     }, /*#__PURE__*/_react.default.createElement("span", {
       id: `${this.props.id}-file-status`
-    })), /*#__PURE__*/_react.default.createElement("label", {
-      for: `${this.props.id}-file`,
-      className: fileInputLabelStyling
-    }, "Hidden File Input:"), /*#__PURE__*/_react.default.createElement("input", {
+    })), /*#__PURE__*/_react.default.createElement("input", {
       id: `${this.props.id}-file`,
       name: `${this.props.id}-file`,
       type: "file",
@@ -186,13 +188,13 @@ FileUploader.propTypes = {
   /** The background colour for the buttons. */
   colour: _propTypes.default.oneOf(['grey', 'red']),
 
-  /** The title text content for the file uploader component. */
-  titleTextContent: _propTypes.default.string
+  /** The label text content for the file uploader component. */
+  labelText: _propTypes.default.string
 };
 FileUploader.defaultProps = {
   addUpperSpacing: false,
   colour: 'grey',
-  titleTextContent: 'Upload a File:'
+  labelText: 'Upload a File:'
 };
 var _default = FileUploader;
 exports.default = _default;

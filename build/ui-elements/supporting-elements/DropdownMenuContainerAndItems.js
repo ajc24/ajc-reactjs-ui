@@ -108,7 +108,8 @@ class DropdownMenuContainerAndItems extends _react.default.Component {
         to: menuItem.route,
         key: `${_this2.props.id}--key-menu-item-${index}`,
         className: dropdownMenuItemStyling,
-        id: `${_this2.props.id}--dropdown-menu-item-${index}`
+        id: `${_this2.props.id}--dropdown-menu-item-${index}`,
+        tabIndex: 0
       }, "\xA0\xA0", menuItem.title, "\xA0\xA0", /*#__PURE__*/_react.default.createElement(_SmallRightArrowIcon.default, {
         colour: "white"
       }), "\xA0\xA0");

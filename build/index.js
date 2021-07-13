@@ -81,6 +81,12 @@ Object.defineProperty(exports, "SmallRightArrowIcon", {
     return _SmallRightArrowIcon.default;
   }
 });
+Object.defineProperty(exports, "TextInput", {
+  enumerable: true,
+  get: function () {
+    return _TextInput.default;
+  }
+});
 
 var _ButtonsList = _interopRequireDefault(require("./ui-elements/ButtonsList"));
 
@@ -107,5 +113,7 @@ var _Menu = _interopRequireDefault(require("./ui-elements/Menu"));
 var _SmallMenuIcon = _interopRequireDefault(require("./ui-elements/SmallMenuIcon"));
 
 var _SmallRightArrowIcon = _interopRequireDefault(require("./ui-elements/SmallRightArrowIcon"));
+
+var _TextInput = _interopRequireDefault(require("./ui-elements/TextInput"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
