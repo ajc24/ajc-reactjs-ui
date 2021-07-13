@@ -28,7 +28,7 @@ describe('File Uploader', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <FileUploader id="default-file-uploader-id" />
         </div>
       );
@@ -45,7 +45,7 @@ describe('File Uploader', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <FileUploader id="custom-file-uploader-id" addUpperSpacing={true} colour="red" titleTextContent="Custom File Uploader Title:" />
         </div>
       );

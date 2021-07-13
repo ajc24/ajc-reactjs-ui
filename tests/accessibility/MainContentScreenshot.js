@@ -18,7 +18,7 @@ describe('Main Content Screenshot', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <MainContentScreenshot id="test-screenshot-id" caption="Test caption text content" imageSrc={testImage} />
         </div>
       );
@@ -35,7 +35,7 @@ describe('Main Content Screenshot', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <MainContentScreenshot id="test-screenshot-id" caption="Test caption text content" imageSrc="../../stories/images/storybook-test-screenshot.png" />
         </div>
       );

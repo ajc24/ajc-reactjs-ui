@@ -49,7 +49,7 @@ describe('Buttons List', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <ButtonsList buttonsList={singleButtonList} />
         </div>
       );
@@ -66,7 +66,7 @@ describe('Buttons List', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <ButtonsList colour="red" alignment="center-align" buttonsList={twoButtonsList} />
         </div>
       );
@@ -83,7 +83,7 @@ describe('Buttons List', () => {
 
     beforeAll(async () => {
       const html = TestDev.mountHtmlTemplate(
-        <div role="banner">
+        <div role="region">
           <ButtonsList colour="grey" alignment="right-align" buttonsList={singleSubmitButtonList} />
         </div>
       );
