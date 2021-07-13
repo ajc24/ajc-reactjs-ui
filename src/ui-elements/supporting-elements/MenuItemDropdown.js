@@ -11,8 +11,20 @@ class MenuItemDropdown extends React.Component {
       isExpanded: false
     };
     /* Bind all relevant functions to the component */
+    this.handleMenuBarItemKeyPress = this.handleMenuBarItemKeyPress.bind(this);
     this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
     this.showDropdownMenu = this.showDropdownMenu.bind(this);
+  }
+
+  /**
+   * Handles key press events on the dropdown menu bar item
+   * @param {Event} event 
+   */
+  handleMenuBarItemKeyPress(event) {
+    if (event.key === 'Enter'){
+      const menuBarItemContent = document.querySelector(`div[id="${this.props.id}"] > div[class*="ajc-menu-bar-item-content"]`);
+      menuBarItemContent.click();
+    }
   }
 
   /**
@@ -68,7 +80,7 @@ class MenuItemDropdown extends React.Component {
     }
     return (
       <div id={`${this.props.id}`} className={containerStyling}>
-        <div className={menuBarItemStyling} onClick={onClickFunctionality} data-expanded={`${this.state.isExpanded}`}>
+        <div className={menuBarItemStyling} onClick={onClickFunctionality} onKeyPress={this.handleMenuBarItemKeyPress} data-expanded={`${this.state.isExpanded}`} tabIndex={0}>
           &nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;
           <SmallMenuIcon colour="white" />
           &nbsp;&nbsp;
