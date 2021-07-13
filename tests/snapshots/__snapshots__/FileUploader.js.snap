@@ -6,7 +6,7 @@ exports[`File Uploader Default props and rendering verifies the snapshot for the
 >
   <label
     className="ajc-file-uploader-input-label ajc-black-text ajc-default"
-    for="default-file-uploader-id-file"
+    htmlFor="default-file-uploader-id-file"
   >
     Upload a File:
   </label>
@@ -55,7 +55,7 @@ exports[`File Uploader Transferred props and rendering - File upload with red bu
 >
   <label
     className="ajc-file-uploader-input-label ajc-black-text ajc-default ajc-file-uploader-input-label-upper-spacing"
-    for="custom-file-uploader-id-file"
+    htmlFor="custom-file-uploader-id-file"
   >
     Custom File Uploader Title:
   </label>
