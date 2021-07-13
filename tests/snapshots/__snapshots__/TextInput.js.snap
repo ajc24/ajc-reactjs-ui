@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Input Default props and rendering - No upper spacing, no character limit, default label text verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-text-input-container ajc-text-black ajc-default"
+>
+  <label
+    className="ajc-text-input-label"
+    htmlFor="default-text-input-id"
+  >
+    Text Input Label Text:
+  </label>
+  <input
+    className="ajc-text-input ajc-text-black ajc-default"
+    id="default-text-input-id"
+    name="default-text-input-id"
+    onChange={[Function]}
+    type="text"
+  />
+</div>
+`;
+
+exports[`Text Input Transferred props and rendering - With character limit, no upper spacing or custom label text verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-text-input-container ajc-text-black ajc-default"
+>
+  <label
+    className="ajc-text-input-label"
+    htmlFor="text-input-with-character-limit-id"
+  >
+    Text Input Label Text:
+  </label>
+  <input
+    className="ajc-text-input ajc-text-black ajc-default"
+    id="text-input-with-character-limit-id"
+    name="text-input-with-character-limit-id"
+    onChange={[Function]}
+    type="text"
+  />
+  <span
+    className="ajc-text-input-character-limit ajc-default ajc-text-black"
+    id="text-input-with-character-limit-id-characters-remaining"
+  />
+</div>
+`;
+
+exports[`Text Input Transferred props and rendering - With upper spacing and custom label text, no character limit verifies the snapshot for the component 1`] = `
+<div
+  className="ajc-text-input-container ajc-text-black ajc-default"
+>
+  <label
+    className="ajc-text-input-label ajc-text-input-label-upper-spacing"
+    htmlFor="text-input-with-upper-spacing-id"
+  >
+    With Upper Spacing and Custom Label:
+  </label>
+  <input
+    className="ajc-text-input ajc-text-black ajc-default"
+    id="text-input-with-upper-spacing-id"
+    name="text-input-with-upper-spacing-id"
+    onChange={[Function]}
+    type="text"
+  />
+</div>
+`;
