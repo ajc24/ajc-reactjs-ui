@@ -42,6 +42,10 @@ describe('MenuItemSingle', () => {
       expect(wrapper.find('a.ajc-menu-bar-item-content').prop('href')).toBe('/test-route');
     });
 
+    it('verifies that the tab index attribute is assigned to the menu item content component', () => {
+      expect(wrapper.find('a.ajc-menu-bar-item-content').prop('tabIndex')).toBe(0);
+    });
+
     it('verfies that the title text is assigned to the menu item content component', () => {
       expect(wrapper.find('a.ajc-menu-bar-item-content').text().trim()).toBe('Single Menu Item');
     });
