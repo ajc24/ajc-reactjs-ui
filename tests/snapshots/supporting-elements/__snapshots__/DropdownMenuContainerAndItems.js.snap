@@ -13,6 +13,7 @@ exports[`DropdownMenuContainerAndItems Default props and rendering - Component m
       href="/test-menu-item-1"
       id="test-id--dropdown-menu-item-0"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 1
@@ -28,6 +29,7 @@ exports[`DropdownMenuContainerAndItems Default props and rendering - Component m
       href="/test-menu-item-2"
       id="test-id--dropdown-menu-item-1"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 2
@@ -55,6 +57,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-1"
       id="test-id--dropdown-menu-item-0"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 1
@@ -70,6 +73,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-2"
       id="test-id--dropdown-menu-item-1"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 2
@@ -97,6 +101,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-1"
       id="test-id--dropdown-menu-item-0"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 1
@@ -112,6 +117,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-2"
       id="test-id--dropdown-menu-item-1"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 2
@@ -139,6 +145,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-1"
       id="test-id--dropdown-menu-item-0"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 1
@@ -154,6 +161,7 @@ exports[`DropdownMenuContainerAndItems Transferred props and rendering - Compone
       href="/test-menu-item-2"
       id="test-id--dropdown-menu-item-1"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu Item 2
