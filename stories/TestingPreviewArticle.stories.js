@@ -22,7 +22,7 @@ export default {
 	title: 'Testing/Web Page',
 };
 
-const ReviewArticleTemplate = () => {
+const PreviewArticleTemplate = () => {
 	return <React.Fragment>
 		<Header id="ajc-header-id-date" backgroundColour="grey" topBorder="red" imageId="header-image-id-date" imageSrc={headerBackgroundImage}>
       <HeaderLogo id="ajc-header-logo-id" imageSrc={headerLogoImage} />
@@ -32,12 +32,12 @@ const ReviewArticleTemplate = () => {
       <Menu id="ajc-menu-id" menuItemsList={siteMenuItemsListTemplate} colour="red" />
     </BrowserRouter>
     <MainContentPanel title="Review Test" colour="grey">
-      <MainContentPageTitle titleText="Review Article" />
+      <MainContentPageTitle titleText="Preview Page" />
       <MainContentText>
         This first paragraph of text will appear above the screenshot. This will give an idea of spacing for paragraphs of text prior to rendering a screenshot
         within an article.
       </MainContentText>
-      <MainContentScreenshot id="default-main-content-screenshot-id" imageSrc={obductionImage} caption="Obductions visuals are truly breathtaking" />
+      <MainContentScreenshot id="default-main-content-screenshot-id" imageSrc={obductionImage} caption="Screenshot caption would go here" />
       <MainContentText>
         This paragraph appears underneath the screenshot. Again this will give a clear indication of how the spacing beneath an article screenshot will work.
       </MainContentText>
@@ -48,8 +48,8 @@ const ReviewArticleTemplate = () => {
 	</React.Fragment>;
 }
 
-export const ReviewPage = ReviewArticleTemplate.bind({});
-ReviewPage.parameters = {
+export const PreviewPage = PreviewArticleTemplate.bind({});
+PreviewPage.parameters = {
   docs: {
     page: null
   }
