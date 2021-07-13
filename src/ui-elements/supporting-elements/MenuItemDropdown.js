@@ -46,6 +46,10 @@ class MenuItemDropdown extends React.Component {
         document.removeEventListener('click', this.hideDropdownMenu, { capture: true });
       });
     }
+    /* If a dropdown menu item has been clicked then ensure the click event takes place - event.preventDefault() will have otherwise prevented this */
+    if (event.target.getAttribute('id') && event.target.getAttribute('id').includes('--dropdown-menu-item-')) {
+      event.target.click();
+    }
   }
 
   /**
