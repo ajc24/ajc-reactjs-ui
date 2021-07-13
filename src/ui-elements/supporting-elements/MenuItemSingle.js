@@ -21,7 +21,7 @@ class MenuItemSingle extends React.Component {
     let innerItemStyling = 'ajc-menu-bar-item-content ajc-default';
     return (
       <div id={this.props.id} className={itemStyling}>
-        <Link to={this.props.route} className={innerItemStyling}>
+        <Link to={this.props.route} className={innerItemStyling} tabIndex={0}>
           &nbsp;&nbsp;{this.props.title}&nbsp;&nbsp;
         </Link>
       </div>
