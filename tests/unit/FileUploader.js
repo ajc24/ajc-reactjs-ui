@@ -32,12 +32,28 @@ describe('File Uploader', () => {
       expect(wrapper.find('div.ajc-file-uploader-container').hasClass('ajc-default')).toBeTruthy();
     });
 
-    it('verifies that the addUpperSpacing property is correctly set to the heading component', () => {
-      expect(wrapper.find('MainContentText').at(0).prop('addUpperSpacing')).toBeFalsy();
+    it('verifies that the for attribute is correctly set to the label element', () => {
+      expect(wrapper.find('label').prop('for')).toBe('default-file-uploader-id-file');
     });
 
-    it('verifies that the titleTextContent property is correctly set to the heading component', () => {
-      expect(wrapper.find('MainContentText').at(0).text()).toBe('Upload a File:');
+    it('verifies that the "ajc-file-uploader-input-label" class is assigned to the label element', () => {
+      expect(wrapper.find('label').hasClass('ajc-file-uploader-input-label')).toBeTruthy();
+    });
+
+    it('verifies that the "ajc-black-text" class is assigned to the label element', () => {
+      expect(wrapper.find('label').hasClass('ajc-black-text')).toBeTruthy();
+    });
+
+    it('verifies that the "ajc-default" class is assigned to the label element', () => {
+      expect(wrapper.find('label').hasClass('ajc-default')).toBeTruthy();
+    });
+
+    it('verifies that the "ajc-file-uploader-input-label-upper-spacing" class is not assigned to the label element', () => {
+      expect(wrapper.find('label').hasClass('ajc-file-uploader-input-label-upper-spacing')).toBeFalsy();
+    });
+
+    it('verifies that the default label text is correctly rendered in the label element', () => {
+      expect(wrapper.find('label').text()).toBe('Upload a File:');
     });
 
     it('verifies that the colour property is correctly set to the buttons list component', () => {
@@ -54,18 +70,6 @@ describe('File Uploader', () => {
 
     it('verifies that the id property is correctly set to the file status element', () => {
       expect(wrapper.find('span').prop('id')).toBe('default-file-uploader-id-file-status');
-    });
-
-    it('verifies that the for attribute is correctly set to the label element', () => {
-      expect(wrapper.find('label').prop('for')).toBe('default-file-uploader-id-file');
-    });
-
-    it('verifies that the "ajc-file-uploader-input-label" class is assigned to the file input element', () => {
-      expect(wrapper.find('label').hasClass('ajc-file-uploader-input-label')).toBeTruthy();
-    });
-
-    it('verifies that the text content for the label element is set correctly', () => {
-      expect(wrapper.find('label').text()).toBe('Hidden File Input:');
     });
 
     it('verifies that the id attribute is correctly set to the file input element', () => {
@@ -95,7 +99,7 @@ describe('File Uploader', () => {
         .mockImplementation(() => {});
       wrapper = TestDev.mount(
         <React.Fragment>
-          <FileUploader id="custom-file-uploader-id" addUpperSpacing={true} colour="red" titleTextContent="Custom File Uploader Title:" />
+          <FileUploader id="custom-file-uploader-id" addUpperSpacing={true} colour="red" labelText="Custom File Uploader Title:" />
         </React.Fragment>
       );
     });
@@ -104,12 +108,12 @@ describe('File Uploader', () => {
       componentDidMountSpy.mockRestore();
     });
 
-    it('verifies that the addUpperSpacing property is correctly set to the heading component', () => {
-      expect(wrapper.find('MainContentText').at(0).prop('addUpperSpacing')).toBeTruthy();
+    it('verifies that the "ajc-file-uploader-input-label-upper-spacing" class is assigned to the label element', () => {
+      expect(wrapper.find('label').hasClass('ajc-file-uploader-input-label-upper-spacing')).toBeTruthy();
     });
 
-    it('verifies that the titleTextContent property is correctly set to the heading component', () => {
-      expect(wrapper.find('MainContentText').at(0).text()).toBe('Custom File Uploader Title:');
+    it('verifies that the default label text is correctly rendered in the label element', () => {
+      expect(wrapper.find('label').text()).toBe('Custom File Uploader Title:');
     });
 
     it('verifies that the colour property is correctly set to the buttons list component', () => {
