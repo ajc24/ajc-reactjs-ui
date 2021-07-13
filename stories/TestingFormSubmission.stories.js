@@ -10,7 +10,8 @@ import {
   MainContentPageTitle,
   MainContentPanel,
   MainContentText,
-  Menu
+  Menu,
+  TextInput
 } from '../src';
 import {
   headerBackgroundImage,
@@ -54,9 +55,9 @@ class FormSubmissionTest extends React.Component {
   }
 
   validateForm() {
-    const screenshotUploader1 = document.getElementById('screenshot-uploader-1-file');
-    const screenshotUploader2 = document.getElementById('screenshot-uploader-2-file');
-    const screenshotUploader3 = document.getElementById('screenshot-uploader-3-file');
+    const screenshotUploader1 = document.getElementById('screenshot-1-file');
+    const screenshotUploader2 = document.getElementById('screenshot-2-file');
+    const screenshotUploader3 = document.getElementById('screenshot-3-file');
     if (screenshotUploader1.files.length === 0) {
       alert('Validation failed - file 1 is not set');
       return false;
@@ -96,9 +97,12 @@ class FormSubmissionTest extends React.Component {
             This page tests form data entry and submitting that data from the front end of an application.
           </MainContentText>
           <form id="main-form">
-            <FileUploader id="screenshot-uploader-1" addUpperSpacing={true} colour="red" titleTextContent="Upload Screenshot 1:" />
-            <FileUploader id="screenshot-uploader-2" addUpperSpacing={false} colour="red" titleTextContent="Upload Screenshot 2:" />
-            <FileUploader id="screenshot-uploader-3" addUpperSpacing={false} colour="red" titleTextContent="Upload Screenshot 3:" />
+            <FileUploader id="screenshot-1" addUpperSpacing={true} colour="red" titleTextContent="Upload Screenshot 1:" />
+            <TextInput id="screenshot-1-caption" labelText="Please enter a caption for the screenshot:" />
+            <FileUploader id="screenshot-2" addUpperSpacing={true} colour="red" titleTextContent="Upload Screenshot 2:" />
+            <TextInput id="screenshot-2-caption" labelText="Please enter a caption for the screenshot:" characterLimit={50} />
+            <FileUploader id="screenshot-3" addUpperSpacing={true} colour="red" titleTextContent="Upload Screenshot 3:" />
+            <TextInput id="screenshot-3-caption" labelText="Please enter a caption for the screenshot:" />
             <MainContentText addUpperSpacing={true} type="heading">
               When you are finished, click to submit the form:
             </MainContentText>
