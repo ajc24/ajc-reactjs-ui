@@ -30,6 +30,7 @@ class MainContentPanel extends _react.default.Component {
     /* Ensure that the <body> element stretches to 100% of the width of the screen, that the X axis scrollbar is hidden and Y axis scrollbar is always displayed */
 
     document.body.classList.add('ajc-body-full-screen');
+    document.activeElement.blur();
   }
 
   render() {

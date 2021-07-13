@@ -74,6 +74,13 @@ class MenuItemDropdown extends _react.default.Component {
     if (event.target.getAttribute('id') && event.target.getAttribute('id').includes('--dropdown-menu-item-')) {
       event.target.click();
     }
+    /* If a single standalone menu item has been clicked then ensure the click event takes place - event.preventDefault() will have otherwise prevented this */
+
+
+    if (event.target.classList && event.target.classList.length === 2 && event.target.classList[0] === 'ajc-menu-bar-item-content' && event.target.classList[1] === 'ajc-default') {
+      event.target.click();
+      document.activeElement.blur();
+    }
   }
   /**
    * Displays the dropdown menu in the UI and adds a click listener to auto-hide the menu again

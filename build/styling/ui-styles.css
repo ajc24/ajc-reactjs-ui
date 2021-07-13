@@ -388,8 +388,15 @@
 }
 
 .ajc-hyperlink, .ajc-hyperlink:visited, .ajc-hyperlink:hover, .ajc-hyperlink:active {
+  padding-left: 2px;
+  padding-right: 2px;
   color: #000D8E;
   text-decoration: none;
+}
+
+.ajc-hyperlink:focus {
+  outline: 1px solid;
+  color: #000D8E;
 }
 
 .ajc-main-content-container {
