@@ -12,6 +12,7 @@ exports[`MenuItemSingle Default props and rendering verifies the snapshot for th
       className="ajc-menu-bar-item-content ajc-default"
       href="/test-route"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Menu Item (Single)
@@ -33,6 +34,7 @@ exports[`MenuItemSingle Transferred props and rendering: MenuItemSingle in red v
       className="ajc-menu-bar-item-content ajc-default"
       href="/test-route"
       onClick={[Function]}
+      tabIndex={0}
     >
         
       Menu Item (Single)
