@@ -4,15 +4,12 @@ exports[`File Uploader Default props and rendering verifies the snapshot for the
 <div
   className="ajc-file-uploader-container ajc-default"
 >
-  <p
-    className="ajc-text-paragraph-container ajc-text-black ajc-default"
+  <label
+    className="ajc-file-uploader-input-label ajc-black-text ajc-default"
+    for="default-file-uploader-id-file"
   >
-    <b
-      className="ajc-text-paragraph-heading"
-    >
-      Upload a File:
-    </b>
-  </p>
+    Upload a File:
+  </label>
   <div
     className="ajc-buttons-list-container ajc-buttons-list-container-left-align ajc-default"
   >
@@ -42,12 +39,6 @@ exports[`File Uploader Default props and rendering verifies the snapshot for the
       />
     </i>
   </p>
-  <label
-    className="ajc-file-uploader-input-label"
-    for="default-file-uploader-id-file"
-  >
-    Hidden File Input:
-  </label>
   <input
     className="ajc-file-uploader-input"
     id="default-file-uploader-id-file"
@@ -62,15 +53,12 @@ exports[`File Uploader Transferred props and rendering - File upload with red bu
 <div
   className="ajc-file-uploader-container ajc-default"
 >
-  <p
-    className="ajc-text-paragraph-container ajc-text-black ajc-default ajc-text-paragraph-upper-spacing"
+  <label
+    className="ajc-file-uploader-input-label ajc-black-text ajc-default ajc-file-uploader-input-label-upper-spacing"
+    for="custom-file-uploader-id-file"
   >
-    <b
-      className="ajc-text-paragraph-heading"
-    >
-      Custom File Uploader Title:
-    </b>
-  </p>
+    Custom File Uploader Title:
+  </label>
   <div
     className="ajc-buttons-list-container ajc-buttons-list-container-left-align ajc-default"
   >
@@ -100,12 +88,6 @@ exports[`File Uploader Transferred props and rendering - File upload with red bu
       />
     </i>
   </p>
-  <label
-    className="ajc-file-uploader-input-label"
-    for="custom-file-uploader-id-file"
-  >
-    Hidden File Input:
-  </label>
   <input
     className="ajc-file-uploader-input"
     id="custom-file-uploader-id-file"

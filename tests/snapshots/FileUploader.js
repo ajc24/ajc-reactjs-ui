@@ -38,7 +38,7 @@ describe('File Uploader', () => {
     beforeAll(() => {
       jsonSnapshot = TestDev.createSnapshot(
         <React.Fragment>
-          <FileUploader id="custom-file-uploader-id" addUpperSpacing={true} colour="red" titleTextContent="Custom File Uploader Title:" />
+          <FileUploader id="custom-file-uploader-id" addUpperSpacing={true} colour="red" labelText="Custom File Uploader Title:" />
         </React.Fragment>
       );
     });
