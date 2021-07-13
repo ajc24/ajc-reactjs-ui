@@ -127,17 +127,17 @@ class FileUploader extends React.Component {
     /* Create the styling for the component */
     const containerStyling = 'ajc-file-uploader-container ajc-default';
     const fileInputStyling = 'ajc-file-uploader-input';
-    const fileInputLabelStyling = 'ajc-file-uploader-input-label';
+    let fileInputLabelStyling = 'ajc-file-uploader-input-label ajc-black-text ajc-default';
+    if (this.props.addUpperSpacing === true) {
+      fileInputLabelStyling += ' ajc-file-uploader-input-label-upper-spacing';
+    }
     return (
       <div className={containerStyling}>
-        <MainContentText type="heading" addUpperSpacing={this.props.addUpperSpacing}>
-          {this.props.titleTextContent}
-        </MainContentText>
+        <label for={`${this.props.id}-file`} className={fileInputLabelStyling}>{this.props.labelText}</label>
         <ButtonsList alignment="left-align" colour={this.props.colour} buttonsList={buttonsListData} />
         <MainContentText type="paragraph-italics">
           <span id={`${this.props.id}-file-status`}></span>
         </MainContentText>
-        <label for={`${this.props.id}-file`} className={fileInputLabelStyling}>Hidden File Input:</label>
         <input id={`${this.props.id}-file`} name={`${this.props.id}-file`} type="file" className={fileInputStyling} onChange={this.handleChangeFileInput}></input>
       </div>
     );
@@ -150,12 +150,12 @@ FileUploader.propTypes = {
   addUpperSpacing: PropTypes.bool,
   /** The background colour for the buttons. */
   colour: PropTypes.oneOf([ 'grey', 'red' ]),
-  /** The title text content for the file uploader component. */
-  titleTextContent: PropTypes.string,
+  /** The label text content for the file uploader component. */
+  labelText: PropTypes.string,
 };
 FileUploader.defaultProps = {
   addUpperSpacing: false,
   colour: 'grey',
-  titleTextContent: 'Upload a File:'
+  labelText: 'Upload a File:'
 };
 export default FileUploader;
