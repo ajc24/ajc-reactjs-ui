@@ -33,7 +33,7 @@ describe('File Uploader', () => {
     });
 
     it('verifies that the for attribute is correctly set to the label element', () => {
-      expect(wrapper.find('label').prop('for')).toBe('default-file-uploader-id-file');
+      expect(wrapper.find('label').prop('htmlFor')).toBe('default-file-uploader-id-file');
     });
 
     it('verifies that the "ajc-file-uploader-input-label" class is assigned to the label element', () => {
