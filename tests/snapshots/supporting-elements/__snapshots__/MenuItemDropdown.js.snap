@@ -12,6 +12,8 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
       className="ajc-menu-bar-item-content ajc-menu-bar-item-grey"
       data-expanded="false"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu
@@ -41,6 +43,7 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
         href="/test-menu-item-1"
         id="test-id--content-parent--dropdown-menu-item-0"
         onClick={[Function]}
+        tabIndex={0}
       >
           
         Dropdown Menu Item 1
@@ -56,6 +59,7 @@ exports[`MenuItemDropdown Default props and rendering verifies the snapshot for 
         href="/test-menu-item-2"
         id="test-id--content-parent--dropdown-menu-item-1"
         onClick={[Function]}
+        tabIndex={0}
       >
           
         Dropdown Menu Item 2
@@ -83,6 +87,8 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
       className="ajc-menu-bar-item-content ajc-menu-bar-item-red"
       data-expanded="false"
       onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex={0}
     >
         
       Dropdown Menu
@@ -112,6 +118,7 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
         href="/test-menu-item-1"
         id="test-id--content-parent--dropdown-menu-item-0"
         onClick={[Function]}
+        tabIndex={0}
       >
           
         Dropdown Menu Item 1
@@ -127,6 +134,7 @@ exports[`MenuItemDropdown Transferred props and rendering - Component in a red c
         href="/test-menu-item-2"
         id="test-id--content-parent--dropdown-menu-item-1"
         onClick={[Function]}
+        tabIndex={0}
       >
           
         Dropdown Menu Item 2
