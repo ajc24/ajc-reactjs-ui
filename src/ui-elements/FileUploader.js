@@ -133,7 +133,7 @@ class FileUploader extends React.Component {
     }
     return (
       <div className={containerStyling}>
-        <label for={`${this.props.id}-file`} className={fileInputLabelStyling}>{this.props.labelText}</label>
+        <label htmlFor={`${this.props.id}-file`} className={fileInputLabelStyling}>{this.props.labelText}</label>
         <ButtonsList alignment="left-align" colour={this.props.colour} buttonsList={buttonsListData} />
         <MainContentText type="paragraph-italics">
           <span id={`${this.props.id}-file-status`}></span>

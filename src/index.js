@@ -11,3 +11,4 @@ export { default as MainContentText } from './ui-elements/MainContentText';
 export { default as Menu } from './ui-elements/Menu';
 export { default as SmallMenuIcon } from './ui-elements/SmallMenuIcon';
 export { default as SmallRightArrowIcon } from './ui-elements/SmallRightArrowIcon';
+export { default as TextInput } from './ui-elements/TextInput';
