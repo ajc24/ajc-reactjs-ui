@@ -66,6 +66,10 @@ describe('MenuItemDropdown', () => {
       expect(wrapper.find('div.ajc-menu-bar-item-content').prop('data-expanded')).toBe('false');
     });
 
+    it('verifies that the tab index attribute is set to the dropdown menu element', () => {
+      expect(wrapper.find('div.ajc-menu-bar-item-content').prop('tabIndex')).toBe(0);
+    });
+
     it('verifies that the title property is set to the dropdown menu element', () => {
       expect(wrapper.find('div.ajc-menu-bar-item-content').text().indexOf('Dropdown Menu')).toBeGreaterThan(-1);
     });
@@ -141,7 +145,7 @@ describe('MenuItemDropdown', () => {
 
     afterAll(() => {
       addEventListenerSpy.mockRestore();
-    })
+    });
 
     it('verifies that the preventDefault functionality is invoked', () => {
       expect(mockPreventDefault.mock.calls).toHaveLength(1);
@@ -207,7 +211,7 @@ describe('MenuItemDropdown', () => {
 
     afterAll(() => {
       removeEventListenerSpy.mockRestore();
-    })
+    });
 
     it('verifies that the preventDefault functionality is invoked', () => {
       expect(mockPreventDefault.mock.calls).toHaveLength(1);
@@ -264,7 +268,7 @@ describe('MenuItemDropdown', () => {
 
     afterAll(() => {
       removeEventListenerSpy.mockRestore();
-    })
+    });
 
     it('verifies that the preventDefault functionality is invoked', () => {
       expect(mockPreventDefault.mock.calls).toHaveLength(1);
@@ -288,6 +292,90 @@ describe('MenuItemDropdown', () => {
 
     it('verifies that the isDisplayed property is correctly passed to the DropdownMenuContainerAndItems element', () => {
       expect(wrapper.find('DropdownMenuContainerAndItems').prop('isDisplayed')).toBeFalsy();
+    });
+  });
+
+  describe('handleMenuBarItemKeyPress() method behaviour - Key press on any key other than the enter key', () => {
+    let mockClick;
+    let mockMenuBarItemElement;
+    let querySelectorSpy;
+    let wrapper;
+
+    beforeAll(() => {
+      mockClick = jest.fn();
+      mockMenuBarItemElement = {
+        click: mockClick,
+      };
+      querySelectorSpy = jest
+        .spyOn(global.document, 'querySelector')
+        .mockImplementation(() => {
+          return mockMenuBarItemElement;
+        });
+      wrapper = TestDev.mount(
+        <div role="navigation">
+          <BrowserRouter>
+            <MenuItemDropdown id="test-id" title="Dropdown Menu" dropdownMenuItemsList={testDropdownMenuItemsList} />
+          </BrowserRouter>
+        </div>
+      );
+      /* Simulate a key press on the dropdown item */
+      wrapper.find('div.ajc-menu-bar-item-content').prop('onKeyPress')({
+        key: 'Delete'
+      });
+    });
+
+    afterAll(() => {
+      querySelectorSpy.mockRestore();
+    });
+
+    it('verifies that the document querySelector functionality is not invoked', () => {
+      expect(querySelectorSpy.mock.calls).toHaveLength(0);
+    });
+
+    it('verifies that the on click functionality for the menu bar item content element is not invoked', () => {
+      expect(mockClick.mock.calls).toHaveLength(0);
+    });
+  });
+
+  describe('handleMenuBarItemKeyPress() method behaviour - Key press on the enter key', () => {
+    let mockClick;
+    let mockMenuBarItemElement;
+    let querySelectorSpy;
+    let wrapper;
+
+    beforeAll(() => {
+      mockClick = jest.fn();
+      mockMenuBarItemElement = {
+        click: mockClick,
+      };
+      querySelectorSpy = jest
+        .spyOn(global.document, 'querySelector')
+        .mockImplementation(() => {
+          return mockMenuBarItemElement;
+        });
+      wrapper = TestDev.mount(
+        <div role="navigation">
+          <BrowserRouter>
+            <MenuItemDropdown id="test-id" title="Dropdown Menu" dropdownMenuItemsList={testDropdownMenuItemsList} />
+          </BrowserRouter>
+        </div>
+      );
+      /* Simulate a key press on the dropdown item */
+      wrapper.find('div.ajc-menu-bar-item-content').prop('onKeyPress')({
+        key: 'Enter'
+      });
+    });
+
+    afterAll(() => {
+      querySelectorSpy.mockRestore();
+    });
+
+    it('verifies that the document querySelector functionality is invoked', () => {
+      expect(querySelectorSpy.mock.calls).toHaveLength(1);
+    });
+
+    it('verifies that the on click functionality for the menu bar item content element is invoked', () => {
+      expect(mockClick.mock.calls).toHaveLength(1);
     });
   });
 });
