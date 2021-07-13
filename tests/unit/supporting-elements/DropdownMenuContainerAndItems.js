@@ -98,6 +98,10 @@ describe('DropdownMenuContainerAndItems', () => {
       expect(wrapper.find('a#test-id--dropdown-menu-item-0').text().indexOf(testDropdownMenuItemsList[0].title)).toBeGreaterThan(-1);
     });
 
+    it('verifies that the tab index attribute is assigned to the first menu item element', () => {
+      expect(wrapper.find('a#test-id--dropdown-menu-item-0').prop('tabIndex')).toBe(0);
+    });
+
     it('verifies that the id attribute is set to the second menu item element', () => {
       expect(wrapper.find('a').at(1).prop('id')).toBe('test-id--dropdown-menu-item-1');
     });
@@ -120,6 +124,10 @@ describe('DropdownMenuContainerAndItems', () => {
 
     it('verifies that the title text is rendered correctly within the second menu item element', () => {
       expect(wrapper.find('a#test-id--dropdown-menu-item-1').text().indexOf(testDropdownMenuItemsList[1].title)).toBeGreaterThan(-1);
+    });
+
+    it('verifies that the tab index attribute is assigned to the second menu item element', () => {
+      expect(wrapper.find('a#test-id--dropdown-menu-item-1').prop('tabIndex')).toBe(0);
     });
   });
 
