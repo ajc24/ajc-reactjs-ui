@@ -24,8 +24,8 @@ RedButtonsAndUpperSpacing.args = {
   colour: 'red',
 };
 
-export const WithCustomTitle = Template.bind({});
-WithCustomTitle.args = {
-  id: 'file-uploader-with-custom-title-id',
-  titleTextContent: 'Custom File Uploader Title:'
+export const WithCustomLabelText = Template.bind({});
+WithCustomLabelText.args = {
+  id: 'file-uploader-with-custom-label-text-id',
+  labelText: 'Custom File Uploader Label Text:'
 };
