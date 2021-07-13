@@ -295,7 +295,7 @@ describe('MenuItemDropdown', () => {
     });
   });
 
-  describe('hideDropdownMenu() method behaviour - Clicking on a dropdown menu item element does not prevent the route redirect', () => {
+  describe('hideDropdownMenu() method behaviour - Route redirect occurs when clicking on a dropdown menu item element', () => {
     let mockOnClick;
     let mockPreventDefault;
     let mockStopPropagation;
@@ -321,7 +321,7 @@ describe('MenuItemDropdown', () => {
       });
       mockPreventDefault.mockClear();
       wrapper.update();
-      /* Attempt a click to hide the dropdown menu - this click won't hide the container */
+      /* Click to hide the dropdown menu - this click is registered on a dropdown menu item and will prompt a redirect */
       const targetElement = document.createElement('a');
       targetElement.setAttribute('id', 'test-id--content-parent--dropdown-menu-item-0');
       targetElement.setAttribute('href', '/sample-route');
@@ -339,6 +339,54 @@ describe('MenuItemDropdown', () => {
     });
 
     it('verifies that the dropdown menu item onClick functionality is invoked', () => {
+      expect(mockOnClick.mock.calls).toHaveLength(1);
+    });
+  });
+
+  describe('hideDropdownMenu() method behaviour - Route redirect occurs when clicking on a standalone / single menu item element', () => {
+    let mockOnClick;
+    let mockPreventDefault;
+    let mockStopPropagation;
+    let removeEventListenerSpy;
+    let wrapper;
+
+    beforeAll(() => {
+      mockOnClick = jest.fn();
+      removeEventListenerSpy = jest
+        .spyOn(document, 'removeEventListener');
+      mockPreventDefault = jest.fn();
+      mockStopPropagation = jest.fn();
+      wrapper = TestDev.mount(
+        <div role="navigation">
+          <BrowserRouter>
+            <MenuItemDropdown id="test-id" title="Dropdown Menu" dropdownMenuItemsList={testDropdownMenuItemsList} />
+          </BrowserRouter>
+        </div>
+      );
+      /* Click to expand the dropdown menu */
+      wrapper.find('div.ajc-menu-bar-item-content').prop('onClick')({
+        preventDefault: mockPreventDefault,
+      });
+      mockPreventDefault.mockClear();
+      wrapper.update();
+      /* Click to hide the dropdown menu - this click is registered on a single / standalone menu item and will prompt a redirect */
+      const targetElement = document.createElement('a');
+      targetElement.classList.add('ajc-menu-bar-item-content');
+      targetElement.classList.add('ajc-default');
+      targetElement.onclick = mockOnClick;
+      wrapper.find('div.ajc-menu-bar-item-content').prop('onClick')({
+        preventDefault: mockPreventDefault,
+        stopPropagation: mockStopPropagation,
+        target: targetElement
+      });
+      wrapper.update();
+    });
+
+    afterAll(() => {
+      removeEventListenerSpy.mockRestore();
+    });
+
+    it('verifies that the single / standalone menu item onClick functionality is invoked', () => {
       expect(mockOnClick.mock.calls).toHaveLength(1);
     });
   });
